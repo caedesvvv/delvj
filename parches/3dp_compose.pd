@@ -1,0 +1,85 @@
+#N canvas 452 92 522 491 10;
+#X obj 393 15 inlet OSC;
+#X obj 18 28 inlet 3dp;
+#X obj 58 124 3dp_color;
+#X floatatom 139 11 5 0 0 0 - - -;
+#X floatatom 185 11 5 0 0 0 - - -;
+#X floatatom 230 11 5 0 0 0 - - -;
+#X floatatom 274 11 5 0 0 0 - - -;
+#X obj 139 -48 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -258699
+-1 -1 4900 1;
+#X obj 185 -49 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -24198
+-1 -1 4900 1;
+#X obj 230 -49 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -62784
+-1 -1 4900 1;
+#X obj 276 -50 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -225271
+-1 -1 4900 1;
+#X obj 42 245 outlet;
+#X floatatom 276 170 5 0 0 0 - - -;
+#X floatatom 311 206 5 0 0 0 - - -;
+#X floatatom 313 235 5 0 0 0 - - -;
+#X floatatom 191 153 5 0 0 0 - - -;
+#X obj 23 190 3dp_view transxyz;
+#X obj 51 222 3dp_view scale 1;
+#X obj 268 52 inlet alpha;
+#X msg 76 -26 1;
+#X obj 52 -48 loadbang;
+#X obj 352 146 metro 100;
+#X obj 364 173 random 100;
+#X obj 324 118 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 380 218 / 1000;
+#X obj 19 282 3dp_toggle depth_test 0;
+#X obj 193 309 3dp_toggle blend_add 1;
+#X obj 189 274 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 308 295 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 546 244 3dp_view transx 3;
+#X obj 546 215 3dp_view roty 54;
+#X msg 276 137 0;
+#X obj 183 101 OSCroute /x /y /z /r /g /b /a /scale /dtest /add;
+#X connect 0 0 32 0;
+#X connect 1 0 25 0;
+#X connect 2 1 16 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 5 0 2 3;
+#X connect 6 0 2 4;
+#X connect 7 0 3 0;
+#X connect 8 0 4 0;
+#X connect 9 0 5 0;
+#X connect 10 0 6 0;
+#X connect 12 0 16 1;
+#X connect 13 0 16 2;
+#X connect 14 0 16 3;
+#X connect 15 0 17 1;
+#X connect 16 0 17 0;
+#X connect 17 0 11 0;
+#X connect 18 0 10 0;
+#X connect 19 0 7 0;
+#X connect 19 0 8 0;
+#X connect 19 0 9 0;
+#X connect 20 0 19 0;
+#X connect 21 0 22 0;
+#X connect 22 0 24 0;
+#X connect 23 0 21 0;
+#X connect 24 0 15 0;
+#X connect 25 1 26 0;
+#X connect 26 1 2 0;
+#X connect 27 0 25 1;
+#X connect 28 0 26 1;
+#X connect 30 0 29 0;
+#X connect 31 0 12 0;
+#X connect 31 0 13 0;
+#X connect 31 0 14 0;
+#X connect 32 0 16 1;
+#X connect 32 1 16 2;
+#X connect 32 2 16 3;
+#X connect 32 3 3 0;
+#X connect 32 4 4 0;
+#X connect 32 5 5 0;
+#X connect 32 6 6 0;
+#X connect 32 7 17 1;
+#X connect 32 8 25 1;
+#X connect 32 9 26 1;

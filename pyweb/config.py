@@ -1,0 +1,6 @@
+osc_definition_file="/var/www/delvj.osc"
+videos_dir="/mnt/windows/mov"
+images_dir="/home/caedes/PNG/"
+web_style="/estilos/madhack.css"
+web_title="delvj web2osc"
+web_text_title="DELVJ WEB2OSC GATEWAY"

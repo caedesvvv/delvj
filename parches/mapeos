@@ -1,0 +1,67 @@
+1 - aging
+2 - baltan
+3 - edge
+4 - intrusion
+5 - lens
+6 - mosaic
+7 - dice
+8 - simura
+9 - ripple
+0 - rev
+' - radioactiv
+¡ - quark
+sh+1 - noquark
+sh+2 - nervous
+sh+3 - shagadelic
+sh+4 - spiral
+sh+5 - underwatch
+sh+6 - vertigo
+sh+7 - warhol
+sh+8 - warp
+sh+9 - cycle
+sh+0 - transform
+sh+' - ascii
+sh+¡ - puzzle
+
+z - zoom on/off
+x - 
+c - siguiente video 1
+v - siguiente video 2
+b - siguiente imagen 2
+n - mezcla fundido/otros modos
+m - mezcla a cada lado/composición
+
+FILTROS PDP
+01 pdp_affine
+02 pdp_agc
+03 pdp_blur
+04 pdp_blur_hor
+05 pdp_blur_ver
+06 pdp_cheby3o
+07 pdp_contrast
+08 pdp_conv_alledge
+09 pdp_conv_emboss
+10 pdp_conv_smooth
+11 pdp_conv_sobel_edge
+12 pdp_conv_sobel_hor
+13 pdp_conv_sobel_ver
+14 pdp_diff
+15 pdp_gain3
+16 pdp_gradient
+17 pdp_grey
+18 pdp_invert
+19 pdp_m_inverse
+20 pdp_motion_blur
+21 pdp_motion_phase
+22 pdp_offset
+23 pdp_phase
+24 pdp_phase_hor
+25 pdp_phase_ver
+26 pdp_png_to
+27 pdp_pps
+28 pdp_saturation
+29 pdp_save_png_sequence
+30 pdp_sub
+31 pdp_tag
+
+

@@ -1,0 +1,36 @@
+#N canvas 43 70 398 407 10;
+#X obj 102 209 pdp_convert \$1;
+#X obj 102 180 pdp_reg;
+#X text 34 15 load a png file and convert to a packet type specified
+by the creation argument. default = bitmap/*/*;
+#X obj 102 121 symbol;
+#X msg 102 149 load_png \$1 \, bang;
+#X obj 45 88 route bang;
+#X msg 37 208 bang;
+#X obj 102 236 pdp_reg;
+#X obj 151 -140 playlist all 200 200;
+#X obj -19 308 pdp_xv;
+#X obj -19 113 pdp_v4l;
+#X obj -19 70 metro 40;
+#X obj -20 45 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj -19 169 pdp_mix;
+#X floatatom 56 286 5 0 0 0 - - -;
+#X msg 178 81;
+#X symbolatom 174 103 50 0 0 0 - - -;
+#X connect 0 0 7 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 5 1 3 0;
+#X connect 6 0 7 0;
+#X connect 7 0 13 1;
+#X connect 8 0 15 0;
+#X connect 8 0 16 0;
+#X connect 10 0 13 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 13 0 9 0;
+#X connect 14 0 13 2;
+#X connect 16 0 5 0;

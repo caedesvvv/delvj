@@ -1,0 +1,124 @@
+#N canvas 412 3 525 628 10;
+#X obj 545 76 pdp_control;
+#X msg 545 48 thread \$1;
+#X obj 545 24 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 265 550 +;
+#X obj 191 422 vsl 15 128 1 0 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 8010 1;
+#X obj 190 393 -;
+#X obj 59 386 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 5180 1;
+#X obj 59 401 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 7050 1;
+#X obj 59 416 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 8920 1;
+#X obj 206 422 vsl 15 128 1 0 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 4580 1;
+#X obj 221 422 vsl 15 128 1 0 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 1149 1;
+#X obj 190 366 unpack f f;
+#X obj 62 317 unpack f f;
+#X obj 68 360 +;
+#X obj 45 360 -;
+#X obj 179 254 pack f f;
+#X obj 243 255 pack f f;
+#X obj 332 423 pdp_zoom;
+#X floatatom 450 308 5 0 0 0 - - -;
+#X msg 553 311 centerx \$1;
+#X floatatom 553 289 5 0 0 0 - - -;
+#X floatatom 636 292 5 0 0 0 - - -;
+#X msg 635 310 centery \$1;
+#X obj 511 197 unpack f f f f;
+#X obj 450 287 min;
+#X obj 446 252 expr .5/($f1+.02);
+#X obj 572 252 expr .5/($f1+.02);
+#X msg 450 339 zoomx \$1 \, zoomy \$1;
+#X obj 309 244 pack f f f f;
+#X obj 134 156 pdp_diff;
+#X text 208 156 <- compute difference between current and previous
+frame;
+#X obj 162 216 pdp_cog_abs_thresh 0.15;
+#X text 331 492 using the blob tracker on a difference signal to detect
+motion;
+#X obj 133 77 inlet;
+#X obj 331 467 outlet;
+#X obj 59 510 s caminputy;
+#X obj 60 482 s caminputx;
+#X floatatom 44 445 5 0 0 0 - - -;
+#X floatatom 104 440 5 0 0 0 - - -;
+#X floatatom 53 131 8 0 0 0 - - -;
+#X obj 19 188 hsl 128 15 0 65535 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 22 88 pdp_bitmask;
+#X obj 136 202 vsl 15 40 0.03 6 1 1 empty empty empty 0 -8 0 8 -262144
+-1 -1 500 1;
+#X obj 137 251 vsl 15 40 0 1 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 105 201 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 105 253 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 11 228 pdp_saturation;
+#X obj 17 273 pdp_contrast;
+#X msg 341 324 filter \$1 0;
+#X msg 342 298 filter \$1 1;
+#X msg 342 374 mfilter 0 200 0;
+#X obj 175 318 pdp_lumafilt;
+#X msg 341 351 mfilter 0 200 1;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 10 0;
+#X connect 4 0 38 0;
+#X connect 5 0 4 0;
+#X connect 8 0 37 0;
+#X connect 11 0 9 0;
+#X connect 11 0 5 0;
+#X connect 11 0 3 0;
+#X connect 11 1 5 1;
+#X connect 11 1 3 1;
+#X connect 12 0 14 0;
+#X connect 12 0 13 0;
+#X connect 12 0 7 0;
+#X connect 12 1 13 1;
+#X connect 12 1 14 1;
+#X connect 13 0 8 0;
+#X connect 14 0 6 0;
+#X connect 15 0 12 0;
+#X connect 16 0 11 0;
+#X connect 17 0 34 0;
+#X connect 18 0 27 0;
+#X connect 19 0 17 0;
+#X connect 20 0 19 0;
+#X connect 21 0 22 0;
+#X connect 22 0 17 0;
+#X connect 23 0 20 0;
+#X connect 23 2 21 0;
+#X connect 24 0 18 0;
+#X connect 27 0 17 0;
+#X connect 28 0 23 0;
+#X connect 29 0 31 0;
+#X connect 31 1 15 0;
+#X connect 31 1 28 0;
+#X connect 31 2 16 0;
+#X connect 31 2 28 2;
+#X connect 31 3 15 1;
+#X connect 31 3 28 1;
+#X connect 31 4 16 1;
+#X connect 31 4 28 3;
+#X connect 33 0 46 0;
+#X connect 33 0 17 0;
+#X connect 37 0 36 0;
+#X connect 38 0 35 0;
+#X connect 39 0 41 1;
+#X connect 40 0 39 0;
+#X connect 41 0 29 0;
+#X connect 42 0 46 1;
+#X connect 43 0 47 1;
+#X connect 46 0 47 0;
+#X connect 47 0 51 0;
+#X connect 48 0 51 0;
+#X connect 49 0 51 0;
+#X connect 50 0 51 0;
+#X connect 51 0 41 0;
+#X connect 52 0 51 0;

@@ -1,0 +1,8 @@
+#N canvas 347 126 564 401 8;
+#X obj 270 49 inlet 3dp;
+#X obj 351 56 inlet tex;
+#X obj 134 317 3dp_draw square 8;
+#X obj 183 220 3dp_view scalex 1.333;
+#X connect 0 0 3 0;
+#X connect 1 0 2 1;
+#X connect 3 0 2 0;

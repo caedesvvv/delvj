@@ -1,0 +1,33 @@
+keymapping= {
+#	"1": "/effects/simura",
+#	"2": "/effects/contrast",
+#	"3": "/effects/phase",
+#	"4": "/effects/fade",
+#	"5": "/effects/compose",
+#	"6": "/effects/cycle",
+#	"7": "/effects/zoom",
+#	"8": "/effects/ascii",
+#	"9": "/effects/dice",
+#	"q": "/effects/erode",
+#	"w": "/effects/rotate",
+#	"e": "/effects/warhol",
+#	"r": "/effects/aging",
+#	"t": "/effects/nervous",
+#	"y": "/effects/radioactiv",
+#	"u": "/effects/swapchannels",
+#	"a": "/3dp/pantalla1/on",
+#	"s": "/3dp/pantalla2/on",
+#	"d": "/3dp/bola1/on",
+#	"f": "/3dp/bola2/on",
+#	"g": "/3dp/cangrejo/on",
+#	"h": "/3dp/storm/on",
+#	"j": "/3dp/explosion/on",
+#	"k": "/3dp/cubitos/on",
+#	"l": "/3dp/cal3d1/on",
+#	"z": "/3dp/cal3d2/on",
+#	"x": "/3dp/text1/on",
+#	"c": "/3dp/text2/on",
+#	"v": "/3dp/light/on"
+  }
+
+

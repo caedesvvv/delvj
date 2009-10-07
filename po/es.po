@@ -1,0 +1,1408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-07-27 03:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: delvj.glade.h:1
+msgid " Launch into:"
+msgstr "Lanzar en:"
+
+#: delvj.glade.h:2
+msgid "/dev/video0"
+msgstr ""
+
+#: delvj.glade.h:3
+msgid "/dev/video1"
+msgstr ""
+
+#: delvj.glade.h:4
+msgid "/dev/video2"
+msgstr ""
+
+#: delvj.glade.h:5
+msgid "/tmp/salida.mov"
+msgstr ""
+
+#: delvj.glade.h:6
+msgid "0"
+msgstr ""
+
+#: delvj.glade.h:7
+msgid "1"
+msgstr ""
+
+#: delvj.glade.h:8
+msgid "2"
+msgstr ""
+
+#: delvj.glade.h:9
+msgid "3"
+msgstr ""
+
+#: delvj.glade.h:10
+msgid "320x240"
+msgstr ""
+
+#: delvj.glade.h:11
+msgid "3d composition"
+msgstr "Composición 3d"
+
+#: delvj.glade.h:12
+msgid "3d text 1"
+msgstr "Texto 3d 1"
+
+#: delvj.glade.h:13
+msgid "3d text 2"
+msgstr "Texto 3d 2"
+
+#: delvj.glade.h:14
+msgid "4"
+msgstr ""
+
+#: delvj.glade.h:15
+msgid "5"
+msgstr ""
+
+#: delvj.glade.h:16
+msgid "6"
+msgstr ""
+
+#: delvj.glade.h:17
+msgid "640x480"
+msgstr ""
+
+#: delvj.glade.h:18
+msgid "8000"
+msgstr ""
+
+#: delvj.glade.h:19
+msgid "<b>2d video output</b>"
+msgstr "<b>Salida de video 2d</b>"
+
+#: delvj.glade.h:20
+msgid "<b>Aging</b>"
+msgstr "<b>Envejecer</b>"
+
+#: delvj.glade.h:21
+msgid "<b>Animation</b>"
+msgstr "<b>Animación</b>"
+
+#: delvj.glade.h:22
+msgid "<b>Automatization of images inside mix</b>"
+msgstr "<b>Automatización de imágenes en la mezcla</b>"
+
+#: delvj.glade.h:23
+msgid "<b>Autonervous</b>"
+msgstr "<b>Autonervio</b>"
+
+#: delvj.glade.h:24
+msgid "<b>Autorot</b>"
+msgstr "<b>Autorot</b>"
+
+#: delvj.glade.h:25
+msgid "<b>Bluetooth</b>"
+msgstr ""
+
+#: delvj.glade.h:26
+msgid "<b>Channel 1</b>"
+msgstr "<b>Canal 1</b>"
+
+#: delvj.glade.h:27
+msgid "<b>Channel 2</b>"
+msgstr "<b>Canal 2</b>"
+
+#: delvj.glade.h:28
+msgid "<b>Crab</b>"
+msgstr "<b>Cangrejo</b>"
+
+#: delvj.glade.h:29
+msgid "<b>Current Sequence</b>"
+msgstr "<b>Secuencia Actual</b>"
+
+#: delvj.glade.h:30
+msgid "<b>Effects</b>"
+msgstr "<b>Efectos</b>"
+
+#: delvj.glade.h:31
+msgid "<b>Erode</b>"
+msgstr "<b>Erode</b>"
+
+#: delvj.glade.h:32
+msgid "<b>High</b>"
+msgstr "<b>Agudos</b>"
+
+#: delvj.glade.h:33
+msgid "<b>Image Mix Modes:</b>"
+msgstr "<b>Modos de Mezcla de Imagen</b>"
+
+#: delvj.glade.h:34
+msgid "<b>Image Selection:</b>"
+msgstr "<b>Selección de Imágenes</b>"
+
+#: delvj.glade.h:35
+msgid "<b>Loaded Images</b>"
+msgstr "<b>Imágenes Cargadas</b>"
+
+#: delvj.glade.h:36
+msgid "<b>Lows</b>"
+msgstr "<b>Graves</b>"
+
+#: delvj.glade.h:37
+msgid "<b>Nervous</b>"
+msgstr "<b>Nervioso</b>"
+
+#: delvj.glade.h:38
+msgid "<b>Object</b>"
+msgstr "<b>Objeto</b>"
+
+#: delvj.glade.h:39
+msgid "<b>Radiactive</b>"
+msgstr "<b>Radioactivo</b>"
+
+#: delvj.glade.h:40
+msgid "<b>Rhythm</b>"
+msgstr "<b>Ritmo</b>"
+
+#: delvj.glade.h:41
+msgid "<b>Rotate</b>"
+msgstr "<b>Rotar</b>"
+
+#: delvj.glade.h:42
+msgid "<b>Selected Object</b>"
+msgstr "<b>Objeto Seleccionado</b>"
+
+#: delvj.glade.h:43
+msgid "<b>Sequence Edition</b>"
+msgstr "<b>Edición de Secuencias</b>"
+
+#: delvj.glade.h:44
+msgid "<b>Sequences</b>"
+msgstr "<b>Secuencias</b>"
+
+#: delvj.glade.h:45
+msgid "<b>Storm Control</b>"
+msgstr "<b>Control de Tormenta</b>"
+
+#: delvj.glade.h:46
+msgid "<b>Text Automatization</b>"
+msgstr "<b>Automatización de Textos</b>"
+
+#: delvj.glade.h:47
+msgid "<b>Text</b>"
+msgstr "<b>Texto</b>"
+
+#: delvj.glade.h:48
+msgid "<b>Video Selection:</b>"
+msgstr "<b>Selección de Vídeos:</b>"
+
+#: delvj.glade.h:49
+msgid "<b>Warhol</b>"
+msgstr ""
+
+#: delvj.glade.h:50
+msgid "<b>ascii</b>"
+msgstr ""
+
+#: delvj.glade.h:51
+msgid "<b>blur</b>"
+msgstr ""
+
+#: delvj.glade.h:52
+msgid "<b>change between video channels with music</b>"
+msgstr "<b>cambio entre los canales de vídeo con la música</b>"
+
+#: delvj.glade.h:53
+msgid "<b>channel automatization 1</b>"
+msgstr "<b>automatización del canal 1</b>"
+
+#: delvj.glade.h:54
+msgid "<b>channel automatization 2</b>"
+msgstr "<b>automatización del canal 2</b>"
+
+#: delvj.glade.h:55
+msgid "<b>color cycle</b>"
+msgstr ""
+
+#: delvj.glade.h:56
+msgid "<b>compose</b>"
+msgstr "<b>composición</b>"
+
+#: delvj.glade.h:57
+msgid "<b>contrast</b>"
+msgstr "<b>contraste</b>"
+
+#: delvj.glade.h:58
+msgid "<b>device</b>"
+msgstr "<b>dispositivo</b>"
+
+#: delvj.glade.h:59
+msgid "<b>dice</b>"
+msgstr "<b>dados</b>"
+
+#: delvj.glade.h:60
+msgid "<b>image 1</b>"
+msgstr "<b>imagen 1</b>"
+
+#: delvj.glade.h:61
+msgid "<b>image 2</b>"
+msgstr "<b>imagen 2</b>"
+
+#: delvj.glade.h:62
+msgid "<b>image 3</b>"
+msgstr "<b>imagen 3</b>"
+
+#: delvj.glade.h:63
+msgid "<b>image 4</b>"
+msgstr "<b>imagen 4</b>"
+
+#: delvj.glade.h:64
+msgid "<b>phase</b>"
+msgstr "<b>eco</b>"
+
+#: delvj.glade.h:65
+msgid "<b>record to disk</b>"
+msgstr "<b>grabar a disco</b>"
+
+#: delvj.glade.h:66
+msgid "<b>rotate</b>"
+msgstr "<b>rotar</b>"
+
+#: delvj.glade.h:67
+msgid "<b>3d video output</b>"
+msgstr "<b>salida de vÃ­deo 3d</b>"
+
+#: delvj.glade.h:68
+msgid "<b>simura</b>"
+msgstr ""
+
+#: delvj.glade.h:69
+msgid "<b>stream video</b>"
+msgstr "<b>enviar video</b>"
+
+#: delvj.glade.h:70
+msgid "<b>texture channel</b>"
+msgstr "<b>canal de textura</b>"
+
+#: delvj.glade.h:71
+msgid "<b>vol</b>"
+msgstr ""
+
+#: delvj.glade.h:72
+msgid "<b>webcam</b>"
+msgstr ""
+
+#: delvj.glade.h:73
+msgid "<b>zoom</b>"
+msgstr ""
+
+#: delvj.glade.h:74
+msgid "A_bout"
+msgstr "A_cerca"
+
+#: delvj.glade.h:75
+msgid "Actions"
+msgstr "Acciones"
+
+#: delvj.glade.h:76
+msgid "Add"
+msgstr "Añadir"
+
+#: delvj.glade.h:77
+msgid "Adds the image to mix"
+msgstr "Añadir la imagen a la mezcla"
+
+#: delvj.glade.h:78
+msgid "Adjust all to 0"
+msgstr "Ajustar todos a 0"
+
+#: delvj.glade.h:79
+msgid "Adjust first element to 0 and move the rest appropiately"
+msgstr "Ajustar el primer elemento a 0 y mover el resto apropiadamente"
+
+#: delvj.glade.h:80
+msgid "Adjust first to 0"
+msgstr "Ajustar el primero a 0"
+
+#: delvj.glade.h:81
+msgid "Arm Length"
+msgstr "Longitud de brazos"
+
+#: delvj.glade.h:82
+msgid "Articulation"
+msgstr "Articulación"
+
+#: delvj.glade.h:83
+msgid "Authorize"
+msgstr "Autorizar"
+
+#: delvj.glade.h:84
+msgid "Auto nervous X"
+msgstr "Auto nervio X"
+
+#: delvj.glade.h:85
+msgid "Auto nervous Y"
+msgstr "Auto nervio Y"
+
+#: delvj.glade.h:86
+msgid "Auto nervous Z"
+msgstr "Auto nervio Z"
+
+#: delvj.glade.h:87
+msgid "Auto rotate X"
+msgstr "Auto rotación X"
+
+#: delvj.glade.h:88
+msgid "Auto rotate Y"
+msgstr "Auto rotación Y"
+
+#: delvj.glade.h:89
+msgid "Auto rotate Z"
+msgstr "Auto rotación Z"
+
+#: delvj.glade.h:90
+msgid "Black"
+msgstr "Negro"
+
+#: delvj.glade.h:91
+msgid "Bluetooth"
+msgstr ""
+
+#: delvj.glade.h:92
+msgid "By Letter"
+msgstr "Letra a Letra"
+
+#: delvj.glade.h:93
+msgid "Cal3d 1"
+msgstr ""
+
+#: delvj.glade.h:94
+msgid "Cal3d 2"
+msgstr ""
+
+#: delvj.glade.h:95
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: delvj.glade.h:96
+msgid "Center"
+msgstr "Centrar"
+
+#: delvj.glade.h:97
+msgid "Center text"
+msgstr "Centrar texto"
+
+#: delvj.glade.h:98
+msgid "Change font"
+msgstr "Cambiar tipo de letra"
+
+#: delvj.glade.h:99
+msgid "Change size of video window"
+msgstr "Cambiar tamaño de la ventana de vídeo"
+
+#: delvj.glade.h:100
+msgid "Change text colour"
+msgstr "Cambiar el color del texto"
+
+#: delvj.glade.h:101
+msgid "Changes text scrolling direction"
+msgstr "Cambia la dirección de movimiento del texto"
+
+#: delvj.glade.h:102
+msgid "Clean"
+msgstr "Limpiar"
+
+#: delvj.glade.h:103
+msgid "Clean State"
+msgstr "Limpiar Estado"
+
+#: delvj.glade.h:104
+msgid "Clean text from video"
+msgstr "Limpiar texto del video"
+
+#: delvj.glade.h:105
+msgid "Clean the message queue"
+msgstr "Limpiar la cola de mensajes"
+
+#: delvj.glade.h:106
+msgid "Configuration"
+msgstr "Configuración"
+
+#: delvj.glade.h:107
+msgid "Connect"
+msgstr "Conectar"
+
+#: delvj.glade.h:108
+msgid "Connect xmms to pd"
+msgstr "Conectar xmms a pd"
+
+#: delvj.glade.h:109
+msgid "Copy"
+msgstr "Copiar"
+
+#: delvj.glade.h:110
+msgid "Crab"
+msgstr "Cangrejo"
+
+#: delvj.glade.h:111
+msgid "Create a new sequence"
+msgstr "Crear una nueva secuencia"
+
+#: delvj.glade.h:112
+msgid "Cube"
+msgstr "Cubo"
+
+#: delvj.glade.h:113
+msgid "Cube Mesh"
+msgstr "Malla de Cubo"
+
+#: delvj.glade.h:114
+msgid "Cube Size"
+msgstr "Tamaño de Cubos"
+
+#: delvj.glade.h:115
+msgid "Cubes"
+msgstr "Cubitos"
+
+#: delvj.glade.h:116
+msgid "Delete"
+msgstr "Borrar"
+
+#: delvj.glade.h:117
+msgid "Delete Command"
+msgstr "Borrar Comando"
+
+#: delvj.glade.h:118
+msgid "Delete all events from sequence"
+msgstr "Borrar todos los eventos de la secuencia"
+
+#: delvj.glade.h:119
+msgid "Delete image from screen"
+msgstr "Borrar la imagen de la pantalla"
+
+#: delvj.glade.h:120
+msgid "Delete selected event"
+msgstr "Borrar el evento seleccionado"
+
+#: delvj.glade.h:121
+msgid "Delete selected sequence"
+msgstr "Borrar la secuencia seleccionada"
+
+#: delvj.glade.h:122
+msgid "ElectricBall"
+msgstr "BolaEléctrica"
+
+#: delvj.glade.h:123
+msgid "Emission password in the icecast server"
+msgstr "Contraseña de emisión en el servidor icecast"
+
+#: delvj.glade.h:124
+msgid "Enlarge"
+msgstr "Ajustar"
+
+#: delvj.glade.h:125
+msgid "Enlarge image to fill whole frame"
+msgstr "Ajustar imagen al vídeo"
+
+#: delvj.glade.h:126
+msgid "Event list for sequence"
+msgstr "Lista de mensajes de la secuencia"
+
+#: delvj.glade.h:127
+msgid "Explosion"
+msgstr "Explosión"
+
+#: delvj.glade.h:128
+msgid "Feed/Chat"
+msgstr ""
+
+#: delvj.glade.h:129
+msgid "File to record to"
+msgstr "Fichero en el que grabar"
+
+#: delvj.glade.h:130
+msgid "General"
+msgstr ""
+
+#: delvj.glade.h:131
+msgid "Google"
+msgstr ""
+
+#: delvj.glade.h:132
+msgid "H_elp"
+msgstr "A_yuda"
+
+#: delvj.glade.h:133
+msgid "Icecast server to stream to"
+msgstr "Servidor icecast al que enviar el flujo de vídeo"
+
+#: delvj.glade.h:134
+msgid "Image position in x axis"
+msgstr "Posición de la imagen en el eje x"
+
+#: delvj.glade.h:135
+msgid "Image position in y axis"
+msgstr "Posición de la imagen en el eje y"
+
+#: delvj.glade.h:136
+msgid "Images"
+msgstr "Imágenes"
+
+#: delvj.glade.h:137
+msgid "Launch"
+msgstr "Lanzar"
+
+#: delvj.glade.h:138
+msgid "Launch PureData"
+msgstr "Lanzar PureData"
+
+#: delvj.glade.h:139
+msgid "Launch image to output"
+msgstr "Lanzar imagen a la salida"
+
+#: delvj.glade.h:140
+msgid "Launch into:  "
+msgstr "Lanzar en:  "
+
+#: delvj.glade.h:141
+msgid "Launch messages with specified time"
+msgstr "Lanzar mensajes con el tiempo especificado"
+
+#: delvj.glade.h:142
+msgid "Launch selected sequence"
+msgstr "Lanzar la secuencia seleccionada"
+
+#: delvj.glade.h:143
+msgid "Launch with Reset"
+msgstr "Lanzar con Reset"
+
+#: delvj.glade.h:144
+msgid "Left"
+msgstr "Izquierda"
+
+#: delvj.glade.h:145
+msgid "Left justification"
+msgstr "Ajustar texto a la izquierda"
+
+#: delvj.glade.h:146
+msgid "Lighting"
+msgstr "Iluminación"
+
+#: delvj.glade.h:147
+msgid "Load"
+msgstr "Cargar"
+
+#: delvj.glade.h:148
+msgid "Load RSS"
+msgstr "Cargar RSS"
+
+#: delvj.glade.h:149
+msgid "Load a text file"
+msgstr "Cargar un fichero de texto"
+
+#: delvj.glade.h:150
+msgid "Load from Command"
+msgstr "Cargar de Comando"
+
+#: delvj.glade.h:151
+msgid "Load an RSS"
+msgstr "Cargar un RSS"
+
+#: delvj.glade.h:152
+msgid "Loaded messages list"
+msgstr "Lista de mensajes cargados"
+
+#: delvj.glade.h:153
+msgid "Maximize video window"
+msgstr "Maximizar la ventana de vídeo"
+
+#: delvj.glade.h:154
+msgid "Mix video and image colours"
+msgstr "Mezcla los colores del video con los de la imagen"
+
+#: delvj.glade.h:155
+msgid "Mix"
+msgstr "Mezcla"
+
+#: delvj.glade.h:156
+msgid "Mount point in the icecast server"
+msgstr "Punto de emisión en el servidor icecast"
+
+#: delvj.glade.h:157
+msgid "New"
+msgstr "Nueva"
+
+#: delvj.glade.h:158
+msgid "New Sequence"
+msgstr "Nueva Secuencia"
+
+#: delvj.glade.h:159
+msgid "Next"
+msgstr "Siguiente"
+
+#: delvj.glade.h:160
+msgid "Object 1"
+msgstr "Objeto 1"
+
+#: delvj.glade.h:161
+msgid "Object 2"
+msgstr "Objeto 2"
+
+#: delvj.glade.h:162
+msgid "On/Off"
+msgstr ""
+
+#: delvj.glade.h:163
+msgid "Overlays image over mix"
+msgstr "Sobrepone la imagen a la mezcla"
+
+#: delvj.glade.h:164
+msgid "Pause"
+msgstr "Pausa"
+
+#: delvj.glade.h:165
+msgid "Play"
+msgstr "Play"
+
+#: delvj.glade.h:166
+msgid "Position for text in axis x"
+msgstr "Posición para el texto en el eje x"
+
+#: delvj.glade.h:167
+msgid "Position for text in axis y"
+msgstr "Posición para el texto en el eje y"
+
+#: delvj.glade.h:168
+msgid "Press here to start the video server"
+msgstr "Pulsa aquí para iniciar el servidor de vídeo"
+
+#: delvj.glade.h:169
+msgid "Previous"
+msgstr "Anterior"
+
+#: delvj.glade.h:170
+msgid "Put selected element one before in sequence"
+msgstr "Adelantar el elemento seleccionado"
+
+#: delvj.glade.h:171
+msgid "RESTART COMPOSITION"
+msgstr "REINICIAR COMPOSICIÓN"
+
+#: delvj.glade.h:172
+msgid "RSS Feeds"
+msgstr "Feeds RSS"
+
+#: delvj.glade.h:173
+msgid "Record"
+msgstr "Grabar"
+
+#: delvj.glade.h:174
+msgid "Record events to current sequence"
+msgstr "Grabar los eventos en la secuencia actual"
+
+#: delvj.glade.h:175
+msgid "Record last changes to file"
+msgstr "Grabar los últimos cambios a un fichero"
+
+#: delvj.glade.h:176
+msgid "Recording"
+msgstr "Grabación"
+
+#: delvj.glade.h:177
+msgid "Reshade"
+msgstr ""
+
+#: delvj.glade.h:178
+msgid "Substracts image from video"
+msgstr "Resta la image del video"
+
+#: delvj.glade.h:179
+msgid "Substract"
+msgstr "Restar"
+
+#: delvj.glade.h:180
+msgid "Save Changes"
+msgstr "Grabar Cambios"
+
+#: delvj.glade.h:181
+msgid "Save State"
+msgstr "Grabar Estado"
+
+#: delvj.glade.h:182
+msgid "Screen 1"
+msgstr "Pantalla 1"
+
+#: delvj.glade.h:183
+msgid "Screen 2"
+msgstr "Pantalla 2"
+
+#: delvj.glade.h:184
+msgid "Scroll"
+msgstr "Deslizante"
+
+#: delvj.glade.h:185
+msgid "Search in Google"
+msgstr "Buscar en Google"
+
+#: delvj.glade.h:186
+msgid "Sends image to output"
+msgstr "Envia la imagen a la salida"
+
+#: delvj.glade.h:187
+msgid "Sent text to video"
+msgstr "Envia el texto al video"
+
+#: delvj.glade.h:188
+msgid "Sequences"
+msgstr "Secuencias"
+
+#: delvj.glade.h:189
+msgid "Set time 0 to all elements (so they load at start of sequence)"
+msgstr "Define el tiempo a 0 para todos los elementos (para que se carguen al inicio de la secuencia)"
+
+#: delvj.glade.h:190
+msgid "Sphere"
+msgstr "Esfera"
+
+#: delvj.glade.h:191
+msgid "Sphere Mesh"
+msgstr "Malla de Esfera"
+
+#: delvj.glade.h:192
+msgid "Start Recording"
+msgstr "Iniciar Grabación"
+
+#: delvj.glade.h:193
+msgid "Start Streaming"
+msgstr "Iniciar el Streaming"
+
+#: delvj.glade.h:194
+msgid "Start streaming through icecast server"
+msgstr "Iniciar el streaming a través del servidor icecast"
+
+#: delvj.glade.h:195
+msgid "Starts video recording to a file"
+msgstr "Comienza la grabación del video a un fichero"
+
+#: delvj.glade.h:196
+msgid "Static"
+msgstr "Estático"
+
+#: delvj.glade.h:197
+msgid "Stop"
+msgstr "Parar"
+
+#: delvj.glade.h:198
+msgid "Stop PureData"
+msgstr "Parar PureData"
+
+#: delvj.glade.h:199
+msgid "Stop Recording"
+msgstr "Parar la Grabación"
+
+#: delvj.glade.h:200
+msgid "Stop Streaming"
+msgstr "Parar el Streaming"
+
+#: delvj.glade.h:201
+msgid "Stop event recording"
+msgstr "Parar la grabación de eventos"
+
+#: delvj.glade.h:202
+msgid "Stop recording"
+msgstr "Parar la grabación"
+
+#: delvj.glade.h:203
+msgid "Stop streaming"
+msgstr "Parar el streaming"
+
+#: delvj.glade.h:204
+msgid "Stops automatic text launch"
+msgstr "Para el lanzamiento automático de textos"
+
+#: delvj.glade.h:205
+msgid "Storm"
+msgstr "Tormenta"
+
+#: delvj.glade.h:206
+msgid "Streaming"
+msgstr "Streaming"
+
+#: delvj.glade.h:207
+msgid "Switches twin output for maximize on two projectors"
+msgstr "Cambia a salida doble para maximizar en dos proyectores"
+
+#: delvj.glade.h:208
+msgid "Text 1"
+msgstr "Texto 1"
+
+#: delvj.glade.h:209
+msgid "Text 2"
+msgstr "Texto 2"
+
+#: delvj.glade.h:210
+msgid "Text lines appear one after the other"
+msgstr "Las líneas de texto aparecen una tras otra"
+
+#: delvj.glade.h:211
+msgid "Text scrolls through window"
+msgstr "El texto se desliza a través de la ventana"
+
+#: delvj.glade.h:212
+msgid "Text stays in its place"
+msgstr "El texto sigue en su lugar"
+
+#: delvj.glade.h:213
+msgid "Texts"
+msgstr "Textos"
+
+#: delvj.glade.h:214
+msgid "Time between messages"
+msgstr "Tiempo entre mensajes"
+
+#: delvj.glade.h:215
+msgid "Torus Size"
+msgstr "Tamaño de Toros"
+
+#: delvj.glade.h:216
+msgid "Torus width"
+msgstr "Ancho de Toros"
+
+#: delvj.glade.h:217
+msgid "Up"
+msgstr "Subir"
+
+#: delvj.glade.h:218
+msgid "Up/Down"
+msgstr "Arriba/Abajo"
+
+#: delvj.glade.h:219
+msgid "Update"
+msgstr "Actualizar"
+
+#: delvj.glade.h:220
+msgid "Video 1"
+msgstr ""
+
+#: delvj.glade.h:221
+msgid "Video 2"
+msgstr ""
+
+#: delvj.glade.h:222
+msgid "Videos"
+msgstr ""
+
+#: delvj.glade.h:223
+msgid "Write a text to send"
+msgstr "Escribe un texto para enviar"
+
+#: delvj.glade.h:224
+msgid "X"
+msgstr ""
+
+#: delvj.glade.h:225
+msgid "XMMS control"
+msgstr ""
+
+#: delvj.glade.h:226
+msgid "Y"
+msgstr ""
+
+#: delvj.glade.h:227
+msgid "Z"
+msgstr ""
+
+#: delvj.glade.h:228
+msgid "_File"
+msgstr "_Fichero"
+
+#: delvj.glade.h:229
+msgid "activate 2d output"
+msgstr "activar la salida 2d"
+
+#: delvj.glade.h:230
+msgid "activate 3d output"
+msgstr "activar la salida 3d"
+
+#: delvj.glade.h:231
+msgid "activate camera"
+msgstr "activar la cámara"
+
+#: delvj.glade.h:232
+msgid "activate monitor output"
+msgstr "activar la salida de monitor"
+
+#: delvj.glade.h:233
+msgid "ascii"
+msgstr ""
+
+#: delvj.glade.h:234
+msgid "auto"
+msgstr ""
+
+#: delvj.glade.h:235
+msgid "ball 1"
+msgstr "bola 1"
+
+#: delvj.glade.h:236
+msgid "ball 2"
+msgstr "bola 2"
+
+#: delvj.glade.h:237
+msgid "beats"
+msgstr "golpes"
+
+#: delvj.glade.h:238
+msgid "blend add"
+msgstr ""
+
+#: delvj.glade.h:239
+msgid "cal3d1"
+msgstr ""
+
+#: delvj.glade.h:240
+msgid "cal3d2"
+msgstr ""
+
+#: delvj.glade.h:241
+msgid "center"
+msgstr "centrar"
+
+#: delvj.glade.h:242
+msgid "center mouse"
+msgstr "centrar ratón"
+
+#: delvj.glade.h:243
+msgid "change image inside folder automatically"
+msgstr "cambiar imágenes dentro de la carpeta automáticamente"
+
+#: delvj.glade.h:244
+msgid "channel 1"
+msgstr "canal 1"
+
+#: delvj.glade.h:245
+msgid "channel 2"
+msgstr "canal 2"
+
+#: delvj.glade.h:246
+msgid "configuration"
+msgstr "configuración"
+
+#: delvj.glade.h:247
+msgid "crab"
+msgstr "cangrejo"
+
+#: delvj.glade.h:248
+msgid "cube"
+msgstr "cubo"
+
+#: delvj.glade.h:249
+msgid "data-J"
+msgstr ""
+
+#: delvj.glade.h:250
+msgid "define the 2 image loaded as texture for object"
+msgstr "define la imagen 2 como textura para el objeto"
+
+#: delvj.glade.h:251
+msgid "define the 3 image loaded as texture for object"
+msgstr "define la imagen 3 como textura para el objeto"
+
+#: delvj.glade.h:252
+msgid "define the 4 image loaded as texture for object"
+msgstr "define la imagen 4 como textura para el objeto"
+
+#: delvj.glade.h:253
+msgid ""
+"define the first image loaded into the texturing unit as texture for object"
+msgstr "define la primera imagen cargada en la unidad de texturizado como textura para el objeto"
+
+#: delvj.glade.h:254
+msgid "define video mix as texture for object"
+msgstr "define la mezcla como textura para el objeto"
+
+#: delvj.glade.h:255
+msgid "delcorp.org"
+msgstr ""
+
+#: delvj.glade.h:256
+msgid "delete"
+msgstr "borrar"
+
+#: delvj.glade.h:257
+msgid "depth test"
+msgstr "test profundidad"
+
+#: delvj.glade.h:258
+msgid "detail"
+msgstr "detalle"
+
+#: delvj.glade.h:259
+msgid "dice"
+msgstr "dados"
+
+#: delvj.glade.h:260
+msgid "distortion"
+msgstr "distorsión"
+
+#: delvj.glade.h:261
+msgid "eject"
+msgstr ""
+
+#: delvj.glade.h:262
+msgid "electric ball"
+msgstr "bola eléctrica"
+
+#: delvj.glade.h:263
+msgid "explosion"
+msgstr "explosión"
+
+#: delvj.glade.h:264
+msgid "file name"
+msgstr "nombre del fichero"
+
+#: delvj.glade.h:265
+msgid ""
+"fortune\n"
+"fortune lao-tse.fortunes\n"
+"fortune refranes.fortunes\n"
+"fortune informatica.fortunes\n"
+"fortune nietzsche.fortunes\n"
+"fortune ciencia.fortunes"
+msgstr ""
+
+#: delvj.glade.h:271
+msgid "fullscreen"
+msgstr "pantalla completa"
+
+#: delvj.glade.h:272
+msgid "general"
+msgstr ""
+
+#: delvj.glade.h:273
+msgid "generate thumbs"
+msgstr "generar thumbs"
+
+#: delvj.glade.h:274
+msgid "icecast server"
+msgstr "servidor icecast"
+
+#: delvj.glade.h:275
+msgid "image 1"
+msgstr "imagen 1"
+
+#: delvj.glade.h:276
+msgid "image 2"
+msgstr "imagen 2"
+
+#: delvj.glade.h:277
+msgid "image 3"
+msgstr "imagen 3"
+
+#: delvj.glade.h:278
+msgid "image 4"
+msgstr "imagen 4"
+
+#: delvj.glade.h:279
+msgid "images"
+msgstr "imagenes"
+
+#: delvj.glade.h:280
+msgid "launch"
+msgstr "lanzar"
+
+#: delvj.glade.h:281
+msgid "launch into channel 1"
+msgstr "lanzar en el canal 1"
+
+#: delvj.glade.h:282
+msgid "launch into channel 2"
+msgstr "lanzar en el canal 2"
+
+#: delvj.glade.h:283
+msgid "launch into image 1"
+msgstr "lanzar en la imagen 1"
+
+#: delvj.glade.h:284
+msgid "launch into image 2"
+msgstr "lanzar en la imagen 2"
+
+#: delvj.glade.h:285
+msgid "launch into image 3"
+msgstr "lanzar en la imagen 3"
+
+#: delvj.glade.h:286
+msgid "launch into image 4"
+msgstr "lanzar en la imagen 4"
+
+#: delvj.glade.h:287
+msgid "lighting"
+msgstr "iluminación"
+
+#: delvj.glade.h:288
+msgid "load text from command"
+msgstr "cargar texto de comando"
+
+#: delvj.glade.h:289
+msgid "mix"
+msgstr "mezcla"
+
+#: delvj.glade.h:290
+msgid "mix base: "
+msgstr "base de la mezcla: "
+
+#: delvj.glade.h:291
+msgid "mount point"
+msgstr ""
+
+#: delvj.glade.h:292
+msgid "name for the new sequence"
+msgstr "nombre para la nueva secuencia"
+
+#: delvj.glade.h:293
+msgid "no"
+msgstr ""
+
+#: delvj.glade.h:294
+msgid "number of beats for change"
+msgstr "numero de golpes para cambio"
+
+#: delvj.glade.h:295
+msgid "off"
+msgstr ""
+
+#: delvj.glade.h:296
+msgid "on"
+msgstr ""
+
+#: delvj.glade.h:297
+msgid "opacity"
+msgstr "opacidad"
+
+#: delvj.glade.h:298
+msgid "opacity:"
+msgstr "opacidad:"
+
+#: delvj.glade.h:299
+msgid "out"
+msgstr ""
+
+#: delvj.glade.h:300
+msgid "passwd"
+msgstr ""
+
+#: delvj.glade.h:301
+msgid "port"
+msgstr "puerto"
+
+#: delvj.glade.h:302
+msgid "port in the icecast server"
+msgstr "puerto en el servidor icecast"
+
+#: delvj.glade.h:303
+msgid "position"
+msgstr "posición"
+
+#: delvj.glade.h:304
+msgid "preview"
+msgstr "previo"
+
+#: delvj.glade.h:305
+msgid "random"
+msgstr ""
+
+#: delvj.glade.h:306
+msgid "record"
+msgstr "grabar"
+
+#: delvj.glade.h:307
+msgid "repeat"
+msgstr "repetir"
+
+#: delvj.glade.h:308
+msgid "reuse"
+msgstr "reutilizar"
+
+#: delvj.glade.h:309
+msgid "rotoblur"
+msgstr ""
+
+#: delvj.glade.h:310
+msgid "screen 1"
+msgstr "pantalla 1"
+
+#: delvj.glade.h:311
+msgid "screen 2"
+msgstr "pantalla 2"
+
+#: delvj.glade.h:312
+msgid "select video from channel 1 as texture for the object"
+msgstr "seleccionar el video del canal 1 como textura para el objeto"
+
+#: delvj.glade.h:313
+msgid "select video from channel 2 as texture for object"
+msgstr "seleccionar el video del canal 2 como textura para el objeto"
+
+#: delvj.glade.h:314
+msgid "send to mix::"
+msgstr "enviar a mezcla::"
+
+#: delvj.glade.h:315
+msgid "separation"
+msgstr "separación"
+
+#: delvj.glade.h:316
+msgid "sequences"
+msgstr "secuencias"
+
+#: delvj.glade.h:317
+msgid "set webcam video as texture"
+msgstr "definir cámara web como textura"
+
+#: delvj.glade.h:318
+msgid "size"
+msgstr "tamaño"
+
+#: delvj.glade.h:319
+msgid "speed"
+msgstr "velocidad"
+
+#: delvj.glade.h:320
+msgid "stop"
+msgstr "parar"
+
+#: delvj.glade.h:321
+msgid "stop automatic switch between channels"
+msgstr "parar el cambio automático entre canales"
+
+#: delvj.glade.h:322
+msgid "storm"
+msgstr "tormenta"
+
+#: delvj.glade.h:323
+msgid "stream"
+msgstr ""
+
+#: delvj.glade.h:324
+msgid "superfor nerve"
+msgstr ""
+
+#: delvj.glade.h:325
+msgid "switch video channels with music"
+msgstr "cambiar entre los canales de video con la música"
+
+#: delvj.glade.h:326
+msgid "synced image change"
+msgstr "cambio de imágenes sincronizado"
+
+#: delvj.glade.h:327
+msgid "synced image change inside folder"
+msgstr "cambio de imágenes sincronizado dentro de la carpeta"
+
+#: delvj.glade.h:328
+msgid "synced video change"
+msgstr "cambio de imágenes sincronizado"
+
+#: delvj.glade.h:329
+msgid "text 1"
+msgstr "texto 1"
+
+#: delvj.glade.h:330
+msgid "text 2"
+msgstr "texto 2"
+
+#: delvj.glade.h:331
+msgid "texts"
+msgstr "textos"
+
+#: delvj.glade.h:332
+msgid "theora.ogg"
+msgstr ""
+
+#: delvj.glade.h:333
+msgid "time:"
+msgstr "tiempo:"
+
+#: delvj.glade.h:334
+msgid "twin output"
+msgstr "salida doble"
+
+#: delvj.glade.h:335
+msgid "two videos at same time"
+msgstr "dos videos a la vez"
+
+#: delvj.glade.h:336
+msgid "videos"
+msgstr ""
+
+#: delvj.glade.h:337
+msgid "write search"
+msgstr "escribir búsqueda"
+
+#: delvj.glade.h:338
+msgid "x"
+msgstr ""
+
+#: delvj.glade.h:339
+msgid "x1"
+msgstr ""
+
+#: delvj.glade.h:340
+msgid "x2"
+msgstr ""
+
+#: delvj.glade.h:341
+msgid "x3"
+msgstr ""
+
+#: delvj.glade.h:342
+msgid "x4"
+msgstr ""
+
+#: delvj.glade.h:343
+msgid "x:"
+msgstr ""
+
+#: delvj.glade.h:344
+msgid "xmms control"
+msgstr ""
+
+#: delvj.glade.h:345
+msgid "xmms is not loaded"
+msgstr "el xmms no está cargado"
+
+#: delvj.glade.h:346
+msgid "xxxxxx"
+msgstr ""
+
+#: delvj.glade.h:347
+msgid "y"
+msgstr ""
+
+#: delvj.glade.h:348
+msgid "y:"
+msgstr ""
+
+#: delvj.glade.h:349
+msgid "z"
+msgstr ""
+
+#: delvj.glade.h:350
+msgid "zoom"
+msgstr ""
+
+#: delvj.glade.h:351
+msgid "zoom:"
+msgstr ""

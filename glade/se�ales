@@ -1,0 +1,68 @@
+MENU:
+ -arracar video		on_arrancar1_activate
+ -parar video		on_parar1_activate
+ -iniciar grabacion	on_iniciar_grabación1_activate  92 open 92 start
+ -parar grabacion	on_parar_grabación1_activate    92 stop
+ -iniciar streaming	on_iniciar_streaming1_activate  93 feed
+ -parar streaming	on_parar_streaming1_activate    93 starve
+ -salir			on_salir1_activate
+ -acerca de		on_acerca_de1_activate
+
+EFECTOS:
+ on_zoom_in_clicked   1 1
+ on_zoom_out_clicked  1 0
+ ascii	2
+ dados 3
+ rotar 4
+ simura 5
+ eco 6
+ blur 7
+ contraste 8
+ ... ascii, dados, rotar, simura, eco, blur, contraste
+
+VIDEOS:
+ on_lanzar_video_canal1_clicked     100 fichero   31 carpeta   
+ on_lanzar_video_canal2_clicked     200 fichero   32 carpeta
+
+(verde 20 rojo 21 azul 22)
+
+AUTOMATIZACION:
+ on_canal1_auto_on_clicked       10
+ on_canal1_auto_off_clicked
+ on_canal2_auto_on_clicked       11
+ on_canal2_auto_off_clicked
+ on_cambio_canal_on_clicked      9
+ on_cambio_canal_off_clicked
+ on_canal1_golpes_clicked        40
+ on_canal2_golpes_clicked        41
+ on_canal1_auto_fichero_changed  
+ on_canal2_auto_fichero_changed
+
+FUENTES:
+ on_color_texto_color_set	203 204 205 (r g b)
+ on_fuente_texto_font_set       200 font helmetr/5
+ on_borrar_texto_clicked	200 clear
+ on_enviar_texto_clicked	200 text blablabla
+ on_texto_texto_changed		200 text blablabla
+
+PNG EXTRA:
+ on_png_launch_clicked		70 1 load imagen x y (70 7 location carpeta)
+ on_png_x			70 2
+ on_png_y			70 3
+ on_hscale_png_value_changed	70 4
+ on_png_auto_on_clicked		70 5 1
+ on_png_auto_off_clicked	70 5 0
+ on_png_golpes_clicked		70 6 número 
+ on_png_clear_clicked		70 1 clear
+
+CONFIGURACION:
+ on_grabar_fichero_changed	92 usamos luego
+ on_iniciar_grabacion_clicked	(92 open) 92 start
+ on_parar_grabacion_clicked	(92 open) 92 stop
+ on_stream_fichero_changed	93 usamos luego
+ on_emitir_streaming_clicked    93 feed http://...,
+ on_parar_streaming_clicked     93 starve
+ on_salida_doble_clicked	83 
+ on_salida_fullscreen_clicked   82
+ on_salida_640_clicked		81
+ on_salida_320_clicked		80

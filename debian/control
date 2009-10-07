@@ -1,0 +1,18 @@
+Source: delvj
+Section: graphics
+Priority: extra
+Maintainer: Pablo Martin <caedes@sindominio.net>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.6.1.1
+
+Package: delvj
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-glade2 (>=2.4.1), python-gtk2 (>=2.4.1), python, pd-pdp-caedes (>= 1:0.12.4-5), pd-pidip-caedes (>= 0.12.20-1), pd-playlist, pd-osc, python-ttfquery, pd-audiospigot
+Recommends: jackd, xmms-jackasyn, php4
+Description: Application for synchronizing videos and effects to music
+ An application for collective+music guided realtime video
+ generation. It synchronizes automatically to music and
+ offers a php interface for controlling it so that anyone 
+ with tcp/ip access to the machine can collaborate in the
+ generation of the videos.
+ It runs over the popular program Pure Data.

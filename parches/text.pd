@@ -1,0 +1,221 @@
+#N canvas 291 15 466 486 10;
+#X text 359 404 pdp_text : text rendering in PDP;
+#X text 302 384 written by Yves Degoyon (ydegoyon@free.fr);
+#X obj 164 89 hdl 15 1 0 10 empty empty empty 0 -6 0 8 -262144 -1 -1
+0;
+#X text 635 143 Select current text ( 10 items by default );
+#X floatatom 357 238 5 0 0 0 x - -;
+#X text 405 237 X coordinate;
+#X floatatom 359 337 5 0 0 0 y - -;
+#X floatatom 595 121 5 0 255 0 r - -;
+#X floatatom 593 163 5 0 255 0 g - -;
+#X floatatom 595 216 5 0 255 0 b - -;
+#X text 427 258 Y coordinate;
+#X msg 167 139 clear;
+#X msg 168 174 delete 1;
+#X msg 168 208 resize 20;
+#X obj 293 372 pdp_text -----------------;
+#X floatatom 585 294 5 0 0 0 angle - -;
+#X msg 199 303 dither \$1;
+#X floatatom 151 305 5 0 0 0 - - -;
+#X floatatom 151 363 5 0 0 0 - - -;
+#X msg 201 327 blend \$1;
+#X floatatom 150 405 5 0 0 0 - - -;
+#X msg 202 347 antialias \$1;
+#X floatatom 587 333 5 0 0 0 scroll - -;
+#X obj 242 406 outlet;
+#X obj 329 7 inlet;
+#X obj 414 6 inlet;
+#X obj 247 114 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 285 472 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 405 464 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 532 463 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 657 462 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X floatatom 37 194 5 0 0 0 - - -;
+#X obj 32 230 metro 100;
+#X floatatom 43 342 5 0 0 0 - - -;
+#X obj 40 368 metro 100;
+#X obj 35 260 countund 320;
+#X obj 43 398 countund 240;
+#X floatatom 97 192 5 0 0 0 - - -;
+#X floatatom 103 338 5 0 0 0 - - -;
+#X obj 26 163 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 42 311 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X msg 526 433 font Adventure/23;
+#X msg 406 439 font larabief/20;
+#X text 56 288 comment;
+#X text 355 264 comment;
+#X obj 286 520 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 406 512 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 533 511 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 658 510 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 286 438 font helmetr/20;
+#X msg 659 485 font ikarrg/32;
+#X obj 286 571 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 406 563 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 533 562 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 659 562 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 285 537 font betadance/20;
+#X msg 407 538 font betsy/40;
+#X msg 535 537 font demon/23;
+#X msg 659 536 font CaptainPodd/32;
+#X msg 407 487 font creature/32;
+#X obj 674 192 metro 100;
+#X obj 706 120 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 684 221 countund 255;
+#X text 635 143 Select current text ( 10 items by default );
+#X obj 663 316 metro 100;
+#X obj 666 346 countund 255;
+#X obj 708 161 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 752 367 metro 100;
+#X obj 755 397 countund 255;
+#X obj 709 215 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X msg 651 432 font ikarrg/28;
+#X msg 534 486 font electroh/23;
+#X obj 287 625 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 407 617 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 534 616 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 660 616 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 286 591 font fadgod/20;
+#X msg 408 592 font failed/40;
+#X msg 535 591 font goldengi/23;
+#X msg 660 590 font independ/32;
+#X obj 49 150 metro 100;
+#X obj 43 83 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 75 517 textcontrol;
+#X floatatom 96 583 5 0 0 0 - - -;
+#X floatatom 140 583 5 0 0 0 - - -;
+#X symbolatom 78 550 30 0 0 0 - - -;
+#X msg 131 490 mode \$1;
+#X obj 46 453 metro 100;
+#X obj 41 422 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 131 464 hradio 15 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 4;
+#X symbolatom 199 585 10 0 0 0 - - -;
+#X msg 287 491 font actionis/13.5;
+#X obj 368 106 route 400 401 402;
+#X msg 96 309 1;
+#X obj 451 162 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X connect 2 0 14 1;
+#X connect 4 0 14 2;
+#X connect 6 0 14 3;
+#X connect 7 0 14 4;
+#X connect 8 0 14 5;
+#X connect 9 0 14 6;
+#X connect 11 0 14 0;
+#X connect 12 0 14 0;
+#X connect 13 0 14 0;
+#X connect 14 0 23 0;
+#X connect 15 0 14 7;
+#X connect 16 0 14 0;
+#X connect 17 0 16 0;
+#X connect 18 0 19 0;
+#X connect 19 0 14 0;
+#X connect 20 0 21 0;
+#X connect 21 0 14 0;
+#X connect 22 0 14 8;
+#X connect 24 0 14 0;
+#X connect 25 0 92 0;
+#X connect 26 0 11 0;
+#X connect 26 0 4 0;
+#X connect 26 0 6 0;
+#X connect 26 0 93 0;
+#X connect 27 0 49 0;
+#X connect 28 0 42 0;
+#X connect 29 0 41 0;
+#X connect 30 0 70 0;
+#X connect 31 0 32 1;
+#X connect 32 0 35 0;
+#X connect 32 0 4 0;
+#X connect 32 0 6 0;
+#X connect 33 0 34 1;
+#X connect 34 0 36 0;
+#X connect 34 0 4 0;
+#X connect 35 0 4 0;
+#X connect 36 0 6 0;
+#X connect 37 0 35 1;
+#X connect 38 0 36 1;
+#X connect 39 0 32 0;
+#X connect 40 0 34 0;
+#X connect 41 0 14 0;
+#X connect 42 0 14 0;
+#X connect 45 0 91 0;
+#X connect 46 0 59 0;
+#X connect 47 0 71 0;
+#X connect 48 0 50 0;
+#X connect 49 0 14 0;
+#X connect 50 0 14 0;
+#X connect 51 0 55 0;
+#X connect 52 0 56 0;
+#X connect 53 0 57 0;
+#X connect 54 0 58 0;
+#X connect 55 0 14 0;
+#X connect 56 0 14 0;
+#X connect 57 0 14 0;
+#X connect 58 0 14 0;
+#X connect 59 0 14 0;
+#X connect 60 0 62 0;
+#X connect 61 0 60 0;
+#X connect 62 0 7 0;
+#X connect 64 0 65 0;
+#X connect 65 0 8 0;
+#X connect 66 0 64 0;
+#X connect 67 0 68 0;
+#X connect 68 0 9 0;
+#X connect 69 0 67 0;
+#X connect 70 0 14 0;
+#X connect 71 0 14 0;
+#X connect 72 0 76 0;
+#X connect 73 0 77 0;
+#X connect 74 0 78 0;
+#X connect 75 0 79 0;
+#X connect 76 0 14 0;
+#X connect 77 0 14 0;
+#X connect 78 0 14 0;
+#X connect 79 0 14 0;
+#X connect 80 0 4 0;
+#X connect 80 0 6 0;
+#X connect 81 0 80 0;
+#X connect 82 0 84 0;
+#X connect 82 0 14 2;
+#X connect 82 1 83 0;
+#X connect 82 1 14 3;
+#X connect 82 2 85 0;
+#X connect 86 0 82 0;
+#X connect 87 0 82 0;
+#X connect 88 0 87 0;
+#X connect 89 0 86 0;
+#X connect 91 0 14 0;
+#X connect 91 0 90 0;
+#X connect 92 0 26 0;
+#X connect 92 0 14 0;
+#X connect 92 0 94 0;
+#X connect 92 1 89 0;
+#X connect 92 2 88 0;
+#X connect 93 0 88 0;
+#X coords 0 0 0.00214592 0.00205761 200 140 0;

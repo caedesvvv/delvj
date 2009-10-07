@@ -1,0 +1,38 @@
+#N canvas 234 203 726 387 10;
+#X floatatom 86 176 5 0 0 0 - - -;
+#X obj 317 134 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X floatatom 127 169 5 0 0 0 - - -;
+#X obj 231 168 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X floatatom 186 106 5 0 0 0 - - -;
+#X floatatom 266 94 5 0 0 0 - - -;
+#X obj 277 38 inlet;
+#X obj 387 38 inlet;
+#X obj 477 42 inlet;
+#X obj 212 37 inlet;
+#X obj 116 236 outlet;
+#X obj 75 200 / \$1;
+#X obj 124 131 random \$2;
+#X obj 231 133 metro \$3;
+#X floatatom 387 95 5 0 0 0 - - -;
+#X obj 544 39 inlet;
+#X text 204 15 divisor;
+#X text 272 15 randommax;
+#X text 387 17 tempo;
+#X text 463 21 full_auto;
+#X text 543 20 step;
+#X text 114 270 salida de control del efecto;
+#X connect 0 0 11 0;
+#X connect 1 0 13 0;
+#X connect 4 0 12 1;
+#X connect 5 0 13 1;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 8 0 1 0;
+#X connect 9 0 11 1;
+#X connect 11 0 10 0;
+#X connect 12 0 0 0;
+#X connect 12 0 2 0;
+#X connect 13 0 12 0;
+#X connect 15 0 12 0;

@@ -1,0 +1,8 @@
+empaquetar: python-pyosc, python-sajax
+	    pidip-0.12.20-caedes (con pdp_xine, imgloader y qtext buenos)
+
+todo_interface: permitir usar pdp_xine o pdp_yqt.
+                permitir enviar mensajes a otras maquinas?
+		permitir enviar audio a otra maquina?
+		separar general?
+

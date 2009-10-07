@@ -1,0 +1,3 @@
+?package(delvj): needs="X11" section="Apps/Graphics"\
+  title="delVj" command="/usr/bin/delvj"
+

@@ -1,0 +1,31 @@
+#N canvas 141 620 452 228 10;
+#X msg -78 43 seek \$1;
+#X floatatom 29 18 5 0 0 0 - - -;
+#X obj -94 -70 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X floatatom -24 -64 5 0 0 0 - - -;
+#X obj -80 8 int-control;
+#X obj 31 -71 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X floatatom 101 -65 5 0 0 0 - - -;
+#X obj -79 95 outlet;
+#X obj -138 -68 inlet;
+#X obj 186 -60 inlet;
+#X obj 43 -33 metro 70;
+#X obj -82 -32 metro 40;
+#X obj 249 -59 inlet;
+#X obj 134 11 r gtempo;
+#X connect 0 0 7 0;
+#X connect 1 0 0 0;
+#X connect 2 0 11 0;
+#X connect 3 0 11 1;
+#X connect 4 0 0 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 1;
+#X connect 8 0 4 0;
+#X connect 9 0 4 1;
+#X connect 10 0 4 1;
+#X connect 11 0 4 0;
+#X connect 12 0 11 0;
+#X connect 13 0 10 1;
+#X connect 13 0 11 1;

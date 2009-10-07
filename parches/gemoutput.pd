@@ -1,0 +1,58 @@
+#N canvas 68 94 654 424 10;
+#X obj 457 211 gemwin;
+#X msg 454 149 create;
+#X msg 461 174 destroy;
+#X obj 539 179 tgl 15 0 empty empty empty 20 8 0 8 -262144 -1 -1 0
+1;
+#X obj 21 236 pix_texture2;
+#X obj 21 142 pix_rgba;
+#X msg 162 166 -1 -2 -1 -2 8 -2 1 -2 1;
+#X obj 21 203 pix_convolve 3 3;
+#X obj 22 117 tgl 15 0 empty empty empty 20 8 0 8 -262144 -1 -1 0 1
+;
+#X floatatom 84 285 5 0 0 0 - - -;
+#X obj 3 46 gemhead;
+#X text -2 75 ============================================================
+;
+#X text 296 294 pdp2gem : pdp to gem bridge;
+#X text 296 312 written by Yves Degoyon (ydegoyon@free.fr);
+#X text 300 123 GEM field;
+#X text 298 98 pdp2gem must be inserted in GEM's rendering chain;
+#X obj 134 118 pdp2gem;
+#X floatatom 116 261 0 0 0 0 - - -;
+#X obj 21 261 rotateXYZ;
+#X obj 229 259 metro 10;
+#X obj 154 260 + 1;
+#X obj 195 260 f;
+#X msg 314 259 bang;
+#X obj 367 259 loadbang;
+#X obj 21 285 sphere;
+#X obj 90 10 inlet;
+#X obj 356 11 inlet;
+#X obj 307 14 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 302 52 spigot;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 18 0;
+#X connect 5 0 7 0;
+#X connect 6 0 7 2;
+#X connect 7 0 4 0;
+#X connect 8 0 5 0;
+#X connect 9 0 24 1;
+#X connect 10 0 16 0;
+#X connect 16 0 5 0;
+#X connect 17 0 18 1;
+#X connect 17 0 18 2;
+#X connect 18 0 24 0;
+#X connect 19 0 21 0;
+#X connect 20 0 21 1;
+#X connect 21 0 20 0;
+#X connect 21 0 17 0;
+#X connect 22 0 19 0;
+#X connect 23 0 22 0;
+#X connect 25 0 28 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 1;
+#X connect 28 0 16 0;

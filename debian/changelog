@@ -1,0 +1,121 @@
+delvj (0.7.2-6ubuntu1) feisty; urgency=low
+
+  * Removed experimental key bindings
+
+ -- Pablo Martin <caedes@sindominio.net>  Tue, 31 Jul 2007 14:59:42 +0200
+
+delvj (0.7.2-5) unstable; urgency=low
+
+  * Added audiospigot to depends
+
+ --  <caedes@localhost.localdomain>  Mon,  1 Jan 2007 17:59:10 +0100
+
+delvj (0.7.2-4) unstable; urgency=low
+
+  * Error in google.py script
+
+ --  <caedes@sindominio.net>  Thu,  7 Dec 2006 09:16:18 +0100
+
+delvj (0.7.2-3) unstable; urgency=low
+
+  * New Upstream Version
+
+ --  <caedes@sindominio.net>  Thu,  7 Dec 2006 08:15:23 +0100
+
+delvj (0.7.2-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@sindominio.net>  Sat,  27 Dec 2005 09:33:12 +0100
+
+delvj (0.7.1-3) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@walker>  Sat, 20 Aug 2005 05:11:28 +0200
+
+delvj (0.7.1-2) unstable; urgency=low
+
+  * Some Corrections
+
+ -- Pablo Martin <caedes@walker>  Sat, 30 Jul 2005 07:36:52 +0200
+
+delvj (0.7.1-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@sindominio.net>  Wed, 27 Jul 2005 11:53:47 +0200
+
+delvj (0.7-6) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@sindominio.net>  Mon, 25 Jul 2005 09:01:02 +0200
+
+delvj (0.7-5) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@sindominio.net>  Sun, 24 Jul 2005 05:44:53 +0200
+
+delvj (0.7-4) unstable; urgency=low
+
+  * Updating dependency versions
+
+ -- Pablo Martin <caedes@walker>  Sun, 24 Jul 2005 01:08:17 +0200
+
+delvj (0.7-3) unstable; urgency=low
+
+  * Setting necessary version numbers for dependencies
+
+ -- Pablo Martin <caedes@walker>  Sat, 23 Jul 2005 09:46:38 +0200
+
+delvj (0.7-2) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@sindominio.net>  Sat, 23 Jul 2005 05:36:02 +0200
+
+delvj (0.7-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@walker>  Sun, 23 Jan 2005 20:48:01 +0100
+
+delvj (0.6-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo Martin <caedes@walker>  Tue, 28 Dec 2004 14:34:32 +0100
+
+delvj (0.5-1) unstable; urgency=low
+
+  * New Upstream Version
+  * The "hackandalus" release
+
+ -- Pablo <caedes@valis>  Thu,  4 Nov 2004 17:30:03 +0100
+
+delvj (0.4-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo <caedes@valis>  Thu, 21 Oct 2004 06:13:32 +0200
+
+delvj (0.3-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo <caedes@sindominio.net>  Thu, 23 Sep 2004 09:29:14 +0200
+
+delvj (0.2-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Pablo <caedes@sindominio.net>  Mon, 13 Sep 2004 23:34:45 +0200
+
+delvj (0.1-1) unstable; urgency=low
+
+  * First Published Version
+
+ -- Pablo <caedes@sindominio.net>  Mon,  5 Jul 2004 20:30:20 +0200
+

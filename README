@@ -1,0 +1,51 @@
+delvj 0.3
+a cyborg video jockey extension for pure data processing
+
+coprises a set of pure data patches, a web interface 
+written in php and a graphical interface using python+glade
+
+-----------------------
+
+This is a set of patches for pure data which allow the generation of videos encompassed to music. Video generation can be tutored by many individuals with web access to the machine through a web interface. It also has a gtk interface for rapid access through local computer
+
+You will need:
+	puredata
+	pdp+pidip+3dp for puredata
+	osc external for puredata
+	playlist for puredata
+	python-glade2
+	python-gtk2 (v2.4 needed)
+	python-xmms
+	pybluez (0.1)
+	python-ttfquery (not in debian, only needed for selecting fonts)
+
+	totem (this is the video thumbnailer for gnome, i don't like this, but haven't yet found a way to generate the video thumnails using lighter programs, please inform me if you know how to do it)
+	xine (video previewer, not compulsory)
+	possibly mencoder and transcoder for transcoding videos to a good format for pidip.
+
+Let's see what we have here:
+
+debian		scripts for debian packet generation
+interfazweb	files for the web interface
+parches		the pure data patches
+scripts		useful scripts
+glade		gtk interface files
+
+if you install the debian package you'll find all these at /usr/share/delvj/.
+
+To install manually you should copy the interfazweb directory to /var/www/pd or wherever you see fit. Also you will need a directory called /var/www/pd/thumbsvideo (unless you change the php scripts...) with write acces for whoever will generate the thumbnails (by the moment you must use the delpd_thumbnailer.sh script, it's planned for the web interface to do this).
+
+SCRIPTS:
+delpd_thumbnailer.sh	generates the video thumbnails
+pd_mencoder.sh		encodes videos to an intermediate avi step
+pd-sync.sh		launches the pure data patches
+pd_transcode.sh		encodes videos to a nice mov format for pidip
+
+BINARIES:
+delvj			runs the gtk interface
+
+License: delvj is distributed under the GNU General Public
+         License available in the COPYING file.
+
+-----------
+Pablo Martín 	-	caedes@sindominio.net
