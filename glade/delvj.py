@@ -722,24 +722,24 @@ back1select.insert_column(column2,1);
 back1select.set_model(macros);
 
 # VISTA DE BLUETOOTH
-back1bluez = xml.get_widget("treeview_bluetooth")
-renderer = gtk.CellRendererText();
-renderer2 = gtk.CellRendererText();
-renderer3 = gtk.CellRendererText();
+#back1bluez = xml.get_widget("treeview_bluetooth")
+#renderer = gtk.CellRendererText();
+#renderer2 = gtk.CellRendererText();
+#renderer3 = gtk.CellRendererText();
 
-column=gtk.TreeViewColumn("MAC",renderer);
-column.add_attribute(renderer, "text",0)
-back1bluez.insert_column(column,0);
+#column=gtk.TreeViewColumn("MAC",renderer);
+#column.add_attribute(renderer, "text",0)
+#back1bluez.insert_column(column,0);
 
-column2=gtk.TreeViewColumn("Nombre",renderer);
-column2.add_attribute(renderer, "text",1)
-back1bluez.insert_column(column2,1);
+#column2=gtk.TreeViewColumn("Nombre",renderer);
+#column2.add_attribute(renderer, "text",1)
+#back1bluez.insert_column(column2,1);
 
-column3=gtk.TreeViewColumn("Estado",renderer);
-column3.add_attribute(renderer, "text",2)
-back1bluez.insert_column(column3,2);
+#column3=gtk.TreeViewColumn("Estado",renderer);
+#column3.add_attribute(renderer, "text",2)
+#back1bluez.insert_column(column3,2);
 
-back1bluez.set_model(macros);
+#back1bluez.set_model(macros);
 
 
 
@@ -892,8 +892,8 @@ if(xmms.is_running()):
 back1select.set_model(s);
 
 
-s = gtk.ListStore(str,str,str);
-back1bluez.set_model(s);
+#s = gtk.ListStore(str,str,str);
+#back1bluez.set_model(s);
 
 videosel.connect("update-preview", update_preview_cb, preview)
 pngsel.connect("update-preview", update_preview_png, preview2)
