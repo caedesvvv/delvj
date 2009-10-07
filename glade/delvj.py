@@ -1306,6 +1306,8 @@ def find_font_name(fontsel):
 		sel2 = string.replace(sel2,"Sans L",'')
 		sel2 = string.replace(sel2,"Bold",'')
 		sel2 = string.replace(sel2,"L,",'')
+		if sel2.endswith(" L"):
+			sel2 = sel2[:-2]
 		sel2 = string.strip(sel2," ")
 		fontNames = registry.matchName(sel2)
 	specifics = registry.fontMembers(fontNames[0])
