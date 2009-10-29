@@ -2016,7 +2016,7 @@ def do_3dp_get_current_object(widget):
 	if (not widget.get_name().find("ball2") == -1):
 		return("bola2")
 	if (not widget.get_name().find("electricball") == -1):
-		return("electricball")
+		return("turbina")
 	if (not widget.get_name().find("crab") == -1):
 		return("cangrejo")
 	if (not widget.get_name().find("storm") == -1):
@@ -2126,6 +2126,30 @@ def on_3dp_object_grosorall_value_changed(widget):
 	address = "/3dp/"+do_3dp_get_current_object(widget)+"/toruswidth"
 	value = widget.get_value()
 	envia(address + " %s\n" % (value))
+
+#turbina
+def on_turbina_bang(widget):
+    address = "/3dp/turbina/control/bang\n"
+    envia(address)
+def on_turbina_usex(widget):
+    address = "/3dp/turbina/control/x"
+    on_toggle_value(widget,address)
+def on_turbina_usey(widget):
+    address = "/3dp/turbina/control/y"
+    on_toggle_value(widget,address)
+def on_turbina_usez(widget):
+    address = "/3dp/turbina/control/z"
+    on_toggle_value(widget,address)
+def on_turbina_greencontrol(widget):
+    address = "/3dp/turbina/control/greencontrol"
+    on_toggle_value(widget,address)
+def on_turbina_bluecontrol(widget):
+    address = "/3dp/turbina/control/bluecontrol"
+    on_toggle_value(widget,address)
+def on_turbina_red(widget):
+    address = "/3dp/turbina/control/redcontrol"
+    on_toggle_value(widget,address)
+
 
 # CUBITOS
 # :value_changed
