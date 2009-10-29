@@ -2102,6 +2102,11 @@ def on_3dp_object_arti_value_changed(widget):
 	value = widget.get_value()
 	envia(address + " %s\n" % (value))
 
+def on_3dp_object_artispeed_value_changed(widget):
+	address = "/3dp/"+do_3dp_get_current_object(widget)+"/articulateanimspeed"
+	value = widget.get_value()
+	envia(address + " %s\n" % (value))
+
 def on_3dp_object_long_value_changed(widget):
 	address = "/3dp/"+do_3dp_get_current_object(widget)+"/toruslen"
 	value = widget.get_value()
@@ -2141,6 +2146,9 @@ def on_3dp_object_cubessquaresize_value_changed(widget):
 	value = widget.get_value()
 	envia(address + " %s\n" % (value))
 # :toggles
+def on_3dp_object_articulateanim_toggled(widget):
+	address = "/3dp/"+do_3dp_get_current_object(widget)+"/articulateanim"
+	on_toggle_value(widget,address)
 def on_3dp_object_cubescubeson_toggled(widget):
 	address = "/3dp/"+do_3dp_get_current_object(widget)+"/cubes/cubeson"
 	on_toggle_value(widget,address)
