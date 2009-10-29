@@ -9267,7 +9267,90 @@
                                             <property name="visible">True</property>
                                             <property name="spacing">5</property>
                                             <child>
-                                              <placeholder/>
+                                              <widget class="GtkHBox" id="hbox4">
+                                                <property name="visible">True</property>
+                                                <property name="spacing">5</property>
+                                                <child>
+                                                  <widget class="GtkButton" id="button54_crab">
+                                                    <property name="label" translatable="yes">x1</property>
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="receives_default">True</property>
+                                                    <property name="use_underline">True</property>
+                                                    <signal name="clicked" handler="on_3dp_object_x1_clicked"/>
+                                                  </widget>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">False</property>
+                                                    <property name="position">0</property>
+                                                  </packing>
+                                                </child>
+                                                <child>
+                                                  <widget class="GtkButton" id="button55_crab">
+                                                    <property name="label" translatable="yes">x2</property>
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="receives_default">True</property>
+                                                    <property name="use_underline">True</property>
+                                                    <signal name="clicked" handler="on_3dp_object_x2_clicked"/>
+                                                  </widget>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">False</property>
+                                                    <property name="position">1</property>
+                                                  </packing>
+                                                </child>
+                                                <child>
+                                                  <widget class="GtkButton" id="button56_crab">
+                                                    <property name="label" translatable="yes">x3</property>
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="receives_default">True</property>
+                                                    <property name="use_underline">True</property>
+                                                    <signal name="clicked" handler="on_3dp_object_x3_clicked"/>
+                                                  </widget>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">False</property>
+                                                    <property name="position">2</property>
+                                                  </packing>
+                                                </child>
+                                                <child>
+                                                  <widget class="GtkButton" id="button57_crab">
+                                                    <property name="label" translatable="yes">x4</property>
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="receives_default">True</property>
+                                                    <property name="use_underline">True</property>
+                                                    <signal name="clicked" handler="on_3dp_object_x4_clicked"/>
+                                                  </widget>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">False</property>
+                                                    <property name="position">3</property>
+                                                  </packing>
+                                                </child>
+                                                <child>
+                                                  <widget class="GtkSpinButton" id="3dp_object_superfor_number_crab">
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="invisible_char">&#x25CF;</property>
+                                                    <property name="adjustment">5 1 10 1 10 10</property>
+                                                    <property name="climb_rate">1</property>
+                                                    <signal name="value_changed" handler="on_3dp_object_superfor_number_value_changed"/>
+                                                  </widget>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">False</property>
+                                                    <property name="position">4</property>
+                                                  </packing>
+                                                </child>
+                                              </widget>
+                                              <packing>
+                                                <property name="expand">False</property>
+                                                <property name="fill">False</property>
+                                                <property name="position">0</property>
+                                              </packing>
                                             </child>
                                             <child>
                                               <placeholder/>
@@ -9403,46 +9486,38 @@
                                       </packing>
                                     </child>
                                     <child>
-                                      <widget class="GtkVBox" id="vbox128">
-                                        <property name="visible">True</property>
-                                        <child>
-                                          <widget class="GtkLabel" id="label409">
-                                            <property name="visible">True</property>
-                                            <property name="label" translatable="yes">opacity</property>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">0</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkHScale" id="3dp_object_opacity_crab">
-                                            <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
-                                            <property name="digits">2</property>
-                                            <property name="value_pos">left</property>
-                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">1</property>
-                                          </packing>
-                                        </child>
-                                      </widget>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="y_options">GTK_FILL</property>
-                                      </packing>
-                                    </child>
-                                    <child>
                                       <widget class="GtkVBox" id="vbox129">
                                         <property name="visible">True</property>
                                         <child>
-                                          <placeholder/>
+                                          <widget class="GtkVBox" id="vbox1">
+                                            <property name="visible">True</property>
+                                            <property name="orientation">vertical</property>
+                                            <child>
+                                              <widget class="GtkLabel" id="label1">
+                                                <property name="visible">True</property>
+                                                <property name="label" translatable="yes">separation</property>
+                                              </widget>
+                                              <packing>
+                                                <property name="position">0</property>
+                                              </packing>
+                                            </child>
+                                            <child>
+                                              <widget class="GtkHScale" id="hscale2_crab">
+                                                <property name="visible">True</property>
+                                                <property name="can_focus">True</property>
+                                                <property name="adjustment">0 0 30 0.0099999997764800008 0 0</property>
+                                                <property name="digits">2</property>
+                                                <property name="value_pos">left</property>
+                                                <signal name="value_changed" handler="on_3dp_object_separacion_value_changed"/>
+                                              </widget>
+                                              <packing>
+                                                <property name="position">1</property>
+                                              </packing>
+                                            </child>
+                                          </widget>
+                                          <packing>
+                                            <property name="position">0</property>
+                                          </packing>
                                         </child>
                                       </widget>
                                       <packing>
@@ -9582,6 +9657,32 @@
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
                                             <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkLabel" id="label409">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">opacity</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">2</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkHScale" id="3dp_object_opacity_crab">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                       </widget>
@@ -10007,6 +10108,43 @@
                                         <property name="top_attach">3</property>
                                         <property name="bottom_attach">4</property>
                                         <property name="x_options">GTK_FILL</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox2">
+                                        <property name="visible">True</property>
+                                        <property name="orientation">vertical</property>
+                                        <child>
+                                          <widget class="GtkLabel" id="label2">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">superfor nerve</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkHScale" id="3dp_object_superfor_nerve_crab">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">0 0 20 0.0099999997764800008 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_superfor_nerve_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">2</property>
+                                        <property name="right_attach">3</property>
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
                                     </child>
