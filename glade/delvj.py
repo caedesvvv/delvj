@@ -923,9 +923,12 @@ def on_show_me_the_patches1_activate(*args):
 	memory = {}
 
 def on_arrancar1_activate(*args):
-	global memory
-	popen2.popen2("bash /usr/share/delvj/scripts/pd-sync.sh &")
-	memory = {}
+    global memory
+    if "GRAPSPATH" in os.environ:
+        popen2.popen2("bash /usr/share/delvj/scripts/pd-sync-graps.sh &")
+    else:
+        popen2.popen2("bash /usr/share/delvj/scripts/pd-sync.sh &")
+    memory = {}
 	
 def on_parar1_activate(*args):
 	popen2.popen2("killall -9 pd")
