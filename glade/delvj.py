@@ -32,6 +32,17 @@ import thread
 import time
 import fileinput
 import socket
+import ConfigParser
+config = ConfigParser.ConfigParser()
+config.add_section("record")
+config.set("record", "outdir",'/tmp')
+config.add_section("stream")
+config.set("stream", "server","giss.tv")
+config.set("stream", "port",'8000')
+config.set("stream", "mountpoint",'')
+config.set("stream", "pass",'')
+config.read(['delvjrc',os.path.expanduser('~/.delvjrc')])
+
 try:
 	import xmms
 except:
@@ -140,6 +151,20 @@ if len(sys.argv) > 1:
 else:
     fname = '/usr/share/delvj/glade/delvj.glade'
 xml = gtk.glade.XML(fname)
+
+# init config
+server_w = xml.get_widget("stream_server")
+port_w = xml.get_widget("stream_port")
+mountpoint_w = xml.get_widget("stream_mount")
+password_w = xml.get_widget("stream_password")
+
+server_w.set_text(config.get('stream', 'server'))
+port_w.set_text(config.get('stream', 'port'))
+mountpoint_w.set_text(config.get('stream', 'mountpoint'))
+password_w.set_text(config.get('stream', 'pass'))
+
+entrada_w = xml.get_widget("grabar_fichero")
+entrada_w.set_text(config.get('record', 'outdir'))
 
 # XXX no parece q funcione
 #gtk.gdk.keyboard_grab(xml.get_widget("window1").get_root_window(),True)
@@ -1738,7 +1763,8 @@ def on_iniciar_grabacion_clicked(*args):
     texto = entrada.get_text()
     #envia("/record open "+texto+"\n92 start\n")
     if grapsdetected:
-        popen2.popen2("graps-recordvid3.sh 640 480 24 /tmp/noguilt-"+str(video_counter)+".avi &")
+        outpath = os.path.join(texto, "noguilt-"+str(video_counter)+".avi")
+        popen2.popen2("graps-recordvid3.sh 640 480 24 "+outpath+" &")
         video_counter+=1
 
     else:
