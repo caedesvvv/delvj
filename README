@@ -1,7 +1,7 @@
 delvj 0.7.5
 a cyborg video jockey extension for pure data processing
 
-coprises a set of pure data patches, a web interface 
+comprises a set of pure data patches, a web interface 
 written in php and a graphical interface using python+glade
 
 -----------------------
@@ -10,13 +10,12 @@ This is a set of patches for pure data which allow the generation of videos enco
 
 You will need:
 	puredata
-	pdp+pidip+3dp for puredata
+	pdp-caedes+pidip-caedes+3dp for puredata
 	osc external for puredata
 	playlist for puredata
 	python-glade2
-	python-gtk2 (v2.4 needed)
-	python-xmms
-	pybluez (0.1)
+	python-gtk2
+	python-xmms (optional)
 	python-ttfquery (not in debian, only needed for selecting fonts)
 
 	totem (this is the video thumbnailer for gnome, i don't like this, but haven't yet found a way to generate the video thumnails using lighter programs, please inform me if you know how to do it)
@@ -37,9 +36,8 @@ To install manually you should copy the interfazweb directory to /var/www/pd or 
 
 SCRIPTS:
 delpd_thumbnailer.sh	generates the video thumbnails
-pd_mencoder.sh		encodes videos to an intermediate avi step
-pd-sync.sh		launches the pure data patches
-pd_transcode.sh		encodes videos to a nice mov format for pidip
+pd-sync*.sh		launches the pure data patches
+pd_transcode3.sh	encodes videos to a nice mov format for pidip
 
 BINARIES:
 delvj			runs the gtk interface
