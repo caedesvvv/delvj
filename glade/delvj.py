@@ -2127,6 +2127,20 @@ def on_3dp_object_grosorall_value_changed(widget):
 	value = widget.get_value()
 	envia(address + " %s\n" % (value))
 
+def on_config_close(widget, menu):
+    win = xml.get_widget("window_config")
+    win.hide()
+    widget = xml.get_widget("menuitem_config")
+    widget.set_active(False)
+    return 1
+
+def on_show_window_config(widget):
+    win = xml.get_widget("window_config")
+    address = "/3dp/turbina/control/x"
+    if widget.get_active():
+        win.show()
+    else:
+        win.hide()
 #turbina
 def on_turbina_bang(widget):
     address = "/3dp/turbina/control/bang\n"
