@@ -13,7 +13,7 @@
 #X obj 230 -49 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -62784
 -1 -1 4900 1;
 #X obj 276 -50 vsl 15 50 0 1 0 0 empty empty empty 0 -8 0 8 -225271
--1 -1 4900 1;
+-1 -1 0 1;
 #X obj 42 245 outlet;
 #X floatatom 276 170 5 0 0 0 - - -;
 #X floatatom 311 206 5 0 0 0 - - -;
@@ -38,8 +38,33 @@
 #X obj 546 244 3dp_view transx 3;
 #X obj 546 215 3dp_view roty 54;
 #X msg 276 137 0;
-#X obj 183 101 OSCroute /x /y /z /r /g /b /a /scale /dtest /add;
-#X connect 0 0 32 0;
+#X obj 410 309 float;
+#X obj 459 309 + 1;
+#X obj 420 276 metro 40;
+#X obj 443 250 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 412 372 sin;
+#X floatatom 377 384 5 0 0 0 - - -;
+#X obj 220 368 + 0;
+#X obj 289 363 t b f;
+#X floatatom 271 406 5 0 0 0 - - -;
+#X floatatom 237 340 5 0 0 0 - - -;
+#X obj 442 345 / 50;
+#X obj 357 358 * 1;
+#X floatatom 367 333 5 0 0 0 - - -;
+#X floatatom 486 341 5 0 0 0 - - -;
+#X obj 545 323 bng 15 250 50 0 empty autoon empty 0 -6 0 8 -143491
+-258699 -1;
+#X obj 568 323 bng 15 250 50 0 empty autostep empty 0 -6 0 8 -62784
+-44926 -1;
+#X obj 569 285 bng 15 250 50 0 empty autofiddle empty 0 -6 0 8 -43142
+-24198 -1;
+#X obj 220 76 OSCroute /x /y /z /r /g /b /a /scale /dtest /add /zsin
+/zsinmusic /zsinspeed /zsinamp;
+#X obj 497 260 spigot;
+#X obj 503 236 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 49 0;
 #X connect 1 0 25 0;
 #X connect 2 1 16 0;
 #X connect 3 0 2 1;
@@ -73,13 +98,36 @@
 #X connect 31 0 12 0;
 #X connect 31 0 13 0;
 #X connect 31 0 14 0;
-#X connect 32 0 16 1;
-#X connect 32 1 16 2;
-#X connect 32 2 16 3;
-#X connect 32 3 3 0;
-#X connect 32 4 4 0;
-#X connect 32 5 5 0;
-#X connect 32 6 6 0;
-#X connect 32 7 17 1;
-#X connect 32 8 25 1;
-#X connect 32 9 26 1;
+#X connect 32 0 33 0;
+#X connect 32 0 42 0;
+#X connect 33 0 32 1;
+#X connect 34 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 37 0;
+#X connect 37 0 43 0;
+#X connect 38 0 16 3;
+#X connect 38 0 40 0;
+#X connect 39 0 38 0;
+#X connect 39 1 38 1;
+#X connect 41 0 38 0;
+#X connect 42 0 36 0;
+#X connect 43 0 39 0;
+#X connect 44 0 43 1;
+#X connect 45 0 42 1;
+#X connect 48 0 50 0;
+#X connect 49 0 16 1;
+#X connect 49 1 16 2;
+#X connect 49 2 38 0;
+#X connect 49 3 3 0;
+#X connect 49 4 4 0;
+#X connect 49 5 5 0;
+#X connect 49 6 6 0;
+#X connect 49 7 17 1;
+#X connect 49 8 25 1;
+#X connect 49 9 26 1;
+#X connect 49 10 35 0;
+#X connect 49 11 51 0;
+#X connect 49 12 45 0;
+#X connect 49 13 44 0;
+#X connect 50 0 35 0;
+#X connect 51 0 50 1;

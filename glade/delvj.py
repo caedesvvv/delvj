@@ -2141,6 +2141,22 @@ def on_show_window_config(widget):
         win.show()
     else:
         win.hide()
+
+def on_general_xflanger(widget):
+    address = "/3dp/general/compose/zsin"
+    on_toggle_value(widget,address)
+def on_general_xflanger_amp(widget):
+    address = "/3dp/general/compose/zsinamp"
+    value = widget.get_value()
+    envia(address + " %s\n" % (value))
+def on_general_xflanger_speed(widget):
+    address = "/3dp/general/compose/zsinspeed"
+    value = 10/(widget.get_value()+0.01)
+    envia(address + " %s\n" % (value))
+def on_general_xflanger_bymusic(widget):
+    address = "/3dp/general/compose/zsinmusic"
+    on_toggle_value(widget,address)
+
 #turbina
 def on_turbina_bang(widget):
     address = "/3dp/turbina/control/bang\n"
