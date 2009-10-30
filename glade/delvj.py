@@ -63,6 +63,12 @@ global totallock
 global search
 global search3d
 global memory
+
+global video_counter
+video_counter = 0
+
+grapsdetected = os.path.exists("/usr/bin/grapsctl") or "GRAPSPATH" in os.environ
+
 search = ""
 search3d = ""
 memory = {}
@@ -922,9 +928,14 @@ def on_show_me_the_patches1_activate(*args):
 	popen2.popen2("bash /usr/share/delvj/scripts/pd-sync-gui.sh &")
 	memory = {}
 
+
 def on_arrancar1_activate(*args):
     global memory
-    if "GRAPSPATH" in os.environ:
+    if os.path.exists("/usr/bin/grapsctl"):
+        os.environ["GRAPSBIN"]="/usr/bin"
+    if "GRAPSPATH" in os.environ or "GRAPSBIN" in os.environ:
+        if "GRAPSPATH" in os.environ:
+            os.environ["GRAPSBIN"]=os.environ["GRAPSPATH"]
         popen2.popen2("bash /usr/share/delvj/scripts/pd-sync-graps.sh &")
     else:
         popen2.popen2("bash /usr/share/delvj/scripts/pd-sync.sh &")
@@ -1722,24 +1733,48 @@ def on_imagen_modo_reshade_clicked(*args):
 
 # CONFIGURACION:
 def on_iniciar_grabacion_clicked(*args):
-	entrada = xml.get_widget("grabar_fichero")
-	texto = entrada.get_text()
-	#envia("/record open "+texto+"\n92 start\n")
-	envia("/record/start 1\n")
+    global video_counter
+    entrada = xml.get_widget("grabar_fichero")
+    texto = entrada.get_text()
+    #envia("/record open "+texto+"\n92 start\n")
+    if grapsdetected:
+        popen2.popen2("graps-recordvid3.sh 640 480 24 /tmp/noguilt-"+str(video_counter)+".avi &")
+        video_counter+=1
+
+    else:
+        envia("/record/start 1\n")
+        
+        
 def on_parar_grabacion_clicked(*args):
-	envia("/record/stop 1\n")
+    if grapsdetected:
+	    popen2.popen2("killall grapsctl &")
+    else:
+        envia("/record/stop 1\n")
+
+def graps_stream(server, port, mountpoint, password):
+    server = "giss.tv"
+    port = "8000"
+    if grapsdetected:
+        popen2.popen2("graps-stream.sh 320 240 "+mountpoint+" "+password+" &")
+
 def on_emitir_streaming_clicked(*args):
 	server = xml.get_widget("stream_server").get_text()
 	port = xml.get_widget("stream_port").get_text()
 	mountpoint = xml.get_widget("stream_mount").get_text()
 	password = xml.get_widget("stream_password").get_text()
+	if grapsdetected:
+                graps_stream(server, port, mountpoint, password)
+                return
 	#texto = entrada.get_text()
 	envia("/stream/play 0\n")
 	envia("/stream/theonice passwd %s\n" % (password))
 	envia("/stream/theonice connect "+server+" "+mountpoint+" %s\n" % (port))
 	envia("/stream/play 1\n")
 def on_parar_streaming_clicked(*args):
-	envia("/stream/play 0\n")
+    if grapsdetected:
+        popen2.popen2("killall grapsctl")
+    else:
+        envia("/stream/play 0\n")
 def on_salida_2videos_toggled(widget):
 	on_toggle_value(widget,"/config/twovideos")
 
