@@ -29,6 +29,8 @@ interfazweb	files for the web interface
 parches		the pure data patches
 scripts		useful scripts
 glade		gtk interface files
+sprites		sample images
+textos		sample texts
 
 if you install the debian package you'll find all these at /usr/share/delvj/.
 
