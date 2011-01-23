@@ -1,0 +1,8 @@
+?package(delvj): \
+        needs="x11" \
+                section="Graphics" \
+        title="DelVJ" \
+        longtitle="Cyborj delvj extension" \
+        icon="/usr/share/delvj/sprites/alice0puerta.png" \
+        command="/usr/bin/delvj"
+

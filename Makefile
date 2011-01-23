@@ -20,12 +20,14 @@ install:
 	install -m 755 -d $(DESTDIR)/share/locale/ca/LC_MESSAGES/
 	install -m 755 -d $(DESTDIR)/share/locale/fr/LC_MESSAGES/
 	install -m 755 -d $(DESTDIR)/bin/
+	install -m 755 -d $(DESTDIR)/share/applications/
 	install -m 755 bin/* $(DESTDIR)/bin/
 	install -m 644 parches/* $(DESTDIR)/share/delvj/parches/
 	install -m 644 interfazweb/*php $(DESTDIR)/share/delvj/interfazweb/
 	install -m 755 scripts/* $(DESTDIR)/share/delvj/scripts/
 	install -m 755 sprites/* $(DESTDIR)/share/delvj/sprites/
 	install -m 755 textos/* $(DESTDIR)/share/delvj/textos/
+	install -m 755 debian/delvj.desktop $(DESTDIR)/share/applications/
 	install -m 755 cal3d/cubes/* $(DESTDIR)/share/delvj/cal3d/cubes/
 	install -m 755 cal3d/logo_delvj/* $(DESTDIR)/share/delvj/cal3d/logo_delvj/
 	install -m 644 glade/*png glade/*glade $(DESTDIR)/share/delvj/glade/

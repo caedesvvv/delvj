@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Delvj
+Comment=Cyborg video jockey tool
+TryExec=delvj
+Categories=Application;Graphics;3DGraphics;
+Exec=delvj %F
+Icon=/usr/share/delvj/sprites/alice0puerta.png
+
