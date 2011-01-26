@@ -1329,6 +1329,10 @@ def get_font_desc(fontsel):
 
 def find_font_name(fontsel):
 	fontsel.set_use_font(1)
+    #print fontsel.get_content_area().get_children()
+	print fontsel
+	print fontsel.get_children()
+	print fontsel.get_children()[0].get_children()
 	sel = fontsel.get_font_name()
 	print sel
 	sel = string.replace(sel,"Italic",'')
@@ -1365,6 +1369,13 @@ def on_3dp_object_font_font_set(widget):
 		xml.get_widget("texto3d1_texto").modify_font(f)
 	else:
 		xml.get_widget("texto3d2_texto").modify_font(f)
+
+def on_3dp_slider_value_changed(widget):
+	address = "/3dp/"+widget.get_name().replace('_', '/')+' '
+	envia(address+str(widget.get_value())+"\n")
+	
+	
+
 
 def on_fuente_texto_font_set3d(*args):
 	fontsel = xml.get_widget("fuente_texto3d")
@@ -1452,9 +1463,16 @@ def on_borrar_texto_clicked3d(*args):
 
 def on_enviar_texto3d1_clicked(*args):
 	entrada = xml.get_widget("texto3d1_texto")
+	reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
+	envia("/3dp/text1/reverse %i\n" % reverse)
+	
 	texto = entrada.get_text()
-	texto = codecs.charmap_decode(texto)
-	envia("/3dp/text1/text text %s\n" % (texto[0]))
+	texto = texto.decode("latin-1")
+	texto = texto.encode("latin-1")
+    #texto = codecs.charmap_decode(texto)
+	#envia("/3dp/text1/text text %s\n" % (texto[0].encode("utf-8")))
+	print "TEXTO",texto
+	envia("/3dp/text1/text text %s\n" % (texto))
 	entrada.set_property("text","")
 	on_w = xml.get_widget("3dp_object_on_text1")
 	if not on_w.get_active():

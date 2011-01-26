@@ -1169,7 +1169,7 @@
                                           <widget class="GtkHScale" id="ritmo_auto_speed">
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
-                                            <property name="adjustment">100 0 1000 0.10000000000000001 1 1</property>
+                                            <property name="adjustment">100 0 1000 0 0 0</property>
                                             <signal name="value_changed" handler="on_ritmo_auto_speed_value_changed"/>
                                           </widget>
                                           <packing>
@@ -1331,7 +1331,7 @@
                                           <widget class="GtkHScale" id="graves_auto_speed">
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
-                                            <property name="adjustment">100 0 1000 0.10000000000000001 1 1</property>
+                                            <property name="adjustment">100 0 1000 0 0 0</property>
                                             <signal name="value_changed" handler="on_graves_auto_speed_value_changed"/>
                                           </widget>
                                           <packing>
@@ -1493,7 +1493,7 @@
                                           <widget class="GtkHScale" id="agudos_auto_speed">
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
-                                            <property name="adjustment">100 0 1000 0.10000000000000001 1 1</property>
+                                            <property name="adjustment">100 0 1000 0 0 0</property>
                                             <signal name="value_changed" handler="on_agudos_auto_speed_value_changed"/>
                                           </widget>
                                           <packing>
@@ -2690,7 +2690,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -3316,7 +3315,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -4841,7 +4839,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -6361,7 +6358,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -7814,7 +7810,6 @@
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="receives_default">False</property>
-                                                <property name="color">#ffffffffffff</property>
                                                 <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                               </widget>
                                               <packing>
@@ -7930,6 +7925,59 @@
                                         </child>
                                       </widget>
                                       <packing>
+                                        <property name="x_options">GTK_FILL</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox116">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <widget class="GtkLabel" id="label380">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">opacity</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkHScale" id="3dp_object_opacity_storm">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">2</property>
+                                        <property name="right_attach">3</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox117">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">1</property>
+                                        <property name="right_attach">2</property>
                                         <property name="x_options">GTK_FILL</property>
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
@@ -8238,32 +8286,6 @@
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
                                             <property name="position">1</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkLabel" id="label380">
-                                            <property name="visible">True</property>
-                                            <property name="label" translatable="yes">opacity</property>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkHScale" id="3dp_object_opacity_storm">
-                                            <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
-                                            <property name="digits">2</property>
-                                            <property name="value_pos">left</property>
-                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                       </widget>
@@ -8761,12 +8783,6 @@
                                         <property name="x_options">GTK_FILL</property>
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
                                     </child>
                                   </widget>
                                 </child>
@@ -9429,7 +9445,6 @@
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="receives_default">False</property>
-                                                <property name="color">#ffffffffffff</property>
                                                 <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                               </widget>
                                               <packing>
@@ -10554,7 +10569,6 @@
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="receives_default">False</property>
-                                                <property name="color">#ffffffffffff</property>
                                                 <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                               </widget>
                                               <packing>
@@ -10670,6 +10684,59 @@
                                         </child>
                                       </widget>
                                       <packing>
+                                        <property name="x_options">GTK_FILL</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox140">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <widget class="GtkLabel" id="label438">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">opacity</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkHScale" id="3dp_object_opacity_electricball">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">1 0 1 0 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">2</property>
+                                        <property name="right_attach">3</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox141">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">1</property>
+                                        <property name="right_attach">2</property>
                                         <property name="x_options">GTK_FILL</property>
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
@@ -10817,6 +10884,25 @@
                                       <packing>
                                         <property name="left_attach">1</property>
                                         <property name="right_attach">2</property>
+                                        <property name="top_attach">2</property>
+                                        <property name="bottom_attach">3</property>
+                                        <property name="x_options">GTK_FILL</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox147">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">2</property>
+                                        <property name="right_attach">3</property>
                                         <property name="top_attach">2</property>
                                         <property name="bottom_attach">3</property>
                                         <property name="x_options">GTK_FILL</property>
@@ -11026,32 +11112,6 @@
                                             <property name="position">1</property>
                                           </packing>
                                         </child>
-                                        <child>
-                                          <widget class="GtkLabel" id="label438">
-                                            <property name="visible">True</property>
-                                            <property name="label" translatable="yes">opacity</property>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkHScale" id="3dp_object_opacity_electricball">
-                                            <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="adjustment">1 0 1 0 0 0</property>
-                                            <property name="digits">2</property>
-                                            <property name="value_pos">left</property>
-                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">3</property>
-                                          </packing>
-                                        </child>
                                       </widget>
                                       <packing>
                                         <property name="top_attach">2</property>
@@ -11239,15 +11299,6 @@
                                         <property name="x_options">GTK_FILL</property>
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
                                     </child>
                                   </widget>
                                 </child>
@@ -11517,7 +11568,6 @@
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="receives_default">False</property>
-                                                <property name="color">#ffffffffffff</property>
                                                 <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                               </widget>
                                               <packing>
@@ -11634,7 +11684,60 @@
                                       </widget>
                                       <packing>
                                         <property name="x_options">GTK_FILL</property>
-                                        <property name="y_options"></property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox152">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <widget class="GtkLabel" id="label467">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">opacity</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
+                                        </child>
+                                        <child>
+                                          <widget class="GtkHScale" id="3dp_object_opacity_explosion">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">1</property>
+                                          </packing>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">2</property>
+                                        <property name="right_attach">3</property>
+                                        <property name="y_options">GTK_FILL</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <widget class="GtkVBox" id="vbox153">
+                                        <property name="visible">True</property>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                        <child>
+                                          <placeholder/>
+                                        </child>
+                                      </widget>
+                                      <packing>
+                                        <property name="left_attach">1</property>
+                                        <property name="right_attach">2</property>
+                                        <property name="x_options">GTK_FILL</property>
+                                        <property name="y_options">GTK_FILL</property>
                                       </packing>
                                     </child>
                                     <child>
@@ -12008,32 +12111,6 @@
                                             <property name="position">1</property>
                                           </packing>
                                         </child>
-                                        <child>
-                                          <widget class="GtkLabel" id="label467">
-                                            <property name="visible">True</property>
-                                            <property name="label" translatable="yes">opacity</property>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkHScale" id="3dp_object_opacity_explosion">
-                                            <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="adjustment">1 0 1 0.0099999997764800008 0 0</property>
-                                            <property name="digits">2</property>
-                                            <property name="value_pos">left</property>
-                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">3</property>
-                                          </packing>
-                                        </child>
                                       </widget>
                                       <packing>
                                         <property name="top_attach">2</property>
@@ -12222,12 +12299,6 @@
                                         <property name="y_options">GTK_FILL</property>
                                       </packing>
                                     </child>
-                                    <child>
-                                      <placeholder/>
-                                    </child>
-                                    <child>
-                                      <placeholder/>
-                                    </child>
                                   </widget>
                                 </child>
                               </widget>
@@ -12347,7 +12418,6 @@
                                                 <property name="visible">True</property>
                                                 <property name="can_focus">True</property>
                                                 <property name="receives_default">False</property>
-                                                <property name="color">#ffffffffffff</property>
                                                 <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                               </widget>
                                               <packing>
@@ -12471,10 +12541,30 @@
                                       <widget class="GtkVBox" id="vbox164">
                                         <property name="visible">True</property>
                                         <child>
-                                          <placeholder/>
+                                          <widget class="GtkLabel" id="label496">
+                                            <property name="visible">True</property>
+                                            <property name="label" translatable="yes">opacity</property>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">0</property>
+                                          </packing>
                                         </child>
                                         <child>
-                                          <placeholder/>
+                                          <widget class="GtkHScale" id="3dp_object_opacity_cubes">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">True</property>
+                                            <property name="adjustment">0 0 1 0.10000000149 0 0</property>
+                                            <property name="digits">2</property>
+                                            <property name="value_pos">left</property>
+                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
+                                          </widget>
+                                          <packing>
+                                            <property name="expand">False</property>
+                                            <property name="fill">False</property>
+                                            <property name="position">1</property>
+                                          </packing>
                                         </child>
                                       </widget>
                                       <packing>
@@ -12866,32 +12956,6 @@
                                             <property name="expand">False</property>
                                             <property name="fill">False</property>
                                             <property name="position">1</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkLabel" id="label496">
-                                            <property name="visible">True</property>
-                                            <property name="label" translatable="yes">opacity</property>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <widget class="GtkHScale" id="3dp_object_opacity_cubes">
-                                            <property name="visible">True</property>
-                                            <property name="can_focus">True</property>
-                                            <property name="adjustment">0 0 1 0.10000000149 0 0</property>
-                                            <property name="digits">2</property>
-                                            <property name="value_pos">left</property>
-                                            <signal name="value_changed" handler="on_3dp_object_opacity_value_changed"/>
-                                          </widget>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">False</property>
-                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                       </widget>
@@ -13783,7 +13847,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -15271,7 +15334,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -16751,7 +16813,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
@@ -17614,7 +17675,140 @@
                           </packing>
                         </child>
                         <child>
-                          <placeholder/>
+                          <widget class="GtkHBox" id="hbox10">
+                            <property name="visible">True</property>
+                            <child>
+                              <widget class="GtkVBox" id="vbox4">
+                                <property name="visible">True</property>
+                                <child>
+                                  <widget class="GtkLabel" id="label4">
+                                    <property name="visible">True</property>
+                                    <property name="label" translatable="yes">extrusion</property>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <widget class="GtkHScale" id="text1_extrusion">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="digits">2</property>
+                                    <property name="value_pos">left</property>
+                                    <property name="adjustment">0 0 5 0.01 0.5 0</property>
+                                    <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkVBox" id="vbox5">
+                                <property name="visible">True</property>
+                                <child>
+                                  <widget class="GtkLabel" id="label6">
+                                    <property name="visible">True</property>
+                                    <property name="label" translatable="yes">front size</property>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <widget class="GtkHScale" id="text1_frontsize">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="digits">2</property>
+                                    <property name="value_pos">left</property>
+                                    <property name="adjustment">0 -30 30 0.01 5 0</property>
+                                    <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkVBox" id="vbox6">
+                                <property name="visible">True</property>
+                                <child>
+                                  <widget class="GtkLabel" id="label7">
+                                    <property name="visible">True</property>
+                                    <property name="label" translatable="yes">back size</property>
+                                  </widget>
+                                  <packing>
+                                    <property name="position">0</property>
+                                    <property name="expand">False</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <widget class="GtkHScale" id="text1_backsize">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="digits">2</property>
+                                    <property name="value_pos">left</property>
+                                    <property name="adjustment">0 -30 30 0.01 5 0</property>
+                                    <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </widget>
+                              <packing>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkVBox" id="vbox7">
+                                <property name="visible">True</property>
+                                <child>
+                                  <widget class="GtkLabel" id="glyphseparation">
+                                    <property name="visible">True</property>
+                                    <property name="label" translatable="yes">glyph separation</property>
+                                  </widget>
+                                  <packing>
+                                    <property name="position">0</property>
+                                    <property name="expand">False</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <widget class="GtkHScale" id="text1_glyphseparation">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="digits">2</property>
+                                    <property name="value_pos">left</property>
+                                    <property name="adjustment">1 -10 10 0.01 1 0</property>
+                                    <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
+                                  </widget>
+                                  <packing>
+                                    <property name="position">1</property>
+                                    <property name="expand">False</property>
+                                  </packing>
+                                </child>
+                              </widget>
+                              <packing>
+                                <property name="position">3</property>
+                              </packing>
+                            </child>
+                          </widget>
+                          <packing>
+                            <property name="position">2</property>
+                          </packing>
                         </child>
                       </widget>
                       <packing>
@@ -17779,7 +17973,6 @@
                                             <property name="visible">True</property>
                                             <property name="can_focus">True</property>
                                             <property name="receives_default">False</property>
-                                            <property name="color">#ffffffffffff</property>
                                             <signal name="color_set" handler="on_3dp_object_color_color_set"/>
                                           </widget>
                                           <packing>
