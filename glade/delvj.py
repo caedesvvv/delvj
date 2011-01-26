@@ -451,8 +451,8 @@ def on_window1_key_press_event(window,event):
         envia(keymapping[keyname]+" "+val+"\n")
         print keymapping[keyname]+" "+val
 
-def on_window1_key_release_event(window,event):
-    print "RELEASED:",event.string,event.keyval,event.state,event.hardware_keycode
+#def on_window1_key_release_event(window,event):
+    #    print "RELEASED:",event.string,event.keyval,event.state,event.hardware_keycode
 
 # WIDGETS DE PREVIEW
 # prev_mezcla
