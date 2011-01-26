@@ -464,7 +464,7 @@ prev_imagen1 = xml.get_widget("prev_imagen1")
 prev_imagen2 = xml.get_widget("prev_imagen2")
 prev_imagen3 = xml.get_widget("prev_imagen3")
 prev_imagen4 = xml.get_widget("prev_imagen4")
-prev_objects = ["screen2","ball1","ball2","storm","cal3d1","cal3d2","cubes","text1"]
+prev_objects = ["screen2","ball1","ball2","storm","cal3d1","cal3d2","cubes","text1","text2" ]
 def sync_prev(prev_i):
     pwid = xml.get_widget("3dp_object_tex"+str(prev_i)+"_screen1")
     pixbuf = pwid.get_children()[0].get_children()[0].get_pixbuf()
