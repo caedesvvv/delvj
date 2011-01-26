@@ -43,6 +43,8 @@ config.set("stream", "mountpoint",'')
 config.set("stream", "pass",'')
 config.read(['delvjrc',os.path.expanduser('~/.delvjrc')])
 
+fonts_scanned = False
+
 try:
     import xmms
 except:
@@ -687,11 +689,9 @@ def xmms_control(j,i):
                     if xml.get_widget("checkbutton_auto_textos_reutilizar3d").get_active():
                         model.append([texto])
                     if (xml.get_widget("autotexto_lanzar_3d1").get_active()):
-                        texto = codecs.charmap_encode(texto)
-                        envia("/3dp/text1/text text %s\n" % (texto[0]))
+                        send_3dtext(texto, 'text1')
                     if (xml.get_widget("autotexto_lanzar_3d2").get_active()):
-                        texto = codecs.charmap_encode(texto)
-                        envia("/3dp/text2/text text %s\n" % (texto[0]))
+                        send_3dtext(texto, 'text2')
             gtk.threads_leave()
         if (lanzando_texto):
             contador_texto = contador_texto + 1
@@ -1328,16 +1328,16 @@ def get_font_desc(fontsel):
     return f
 
 def find_font_name(fontsel):
+    global fonts_scanned
     fontsel.set_use_font(1)
-    #print fontsel.get_content_area().get_children()
-    print fontsel
-    print fontsel.get_children()
-    print fontsel.get_children()[0].get_children()
     sel = fontsel.get_font_name()
-    print sel
     sel = string.replace(sel,"Italic",'')
 
     from ttfquery._scriptregistry import registry
+    import ttfquery
+    if not fonts_scanned:
+        ttfquery.findsystem.findFonts()
+        fonts_scanned = True
     sel2 = sel[:sel.rfind(" ")]
     size = sel[sel.rfind(" ")+1:]
     try:
@@ -1445,13 +1445,10 @@ def on_enviar_texto_clicked(*args):
 
 def on_enviar_texto_clicked3d(*args):
     entrada = xml.get_widget("texto_texto3d")
-    texto = entrada.get_text()
     if (xml.get_widget("texto_lanzar_3d1").get_active()):
-        texto = codecs.charmap_encode(texto)
-        envia("/3dp/text1/text text %s\n" % (texto[0]))
+        send_3dtext_fromentry(entrada, "text1")
     if (xml.get_widget("texto_lanzar_3d2").get_active()):
-        texto = codecs.charmap_encode(texto)
-        envia("/3dp/text2/text text %s\n" % (texto[0]))
+        send_3dtext_fromentry(entrada, "text2")
     entrada.set_property("text","")
 
 def on_borrar_texto_clicked3d(*args):
@@ -1460,28 +1457,31 @@ def on_borrar_texto_clicked3d(*args):
     if (xml.get_widget("texto_lanzar_3d2").get_active()):
         envia("/3dp/text2/on %s\n" % (0))
 
+def send_3dtext_fromentry(entrada, destino):
+    reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
+    envia("/3dp/"+destino+"/reverse %i\n" % reverse)
+
+    texto = entrada.get_text()
+    send_3dtext(texto, destino)
+
+def send_3dtext(texto, destino):
+    texto = texto.decode("latin-1")
+    texto = texto.encode("latin-1")
+    envia("/3dp/"+destino+"/text text %s\n" % (texto))
 
 def on_enviar_texto3d1_clicked(*args):
     entrada = xml.get_widget("texto3d1_texto")
-    reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
-    envia("/3dp/text1/reverse %i\n" % reverse)
+    send_3dtext_fromentry(entrada, 'text1')
 
-    texto = entrada.get_text()
-    texto = texto.decode("latin-1")
-    texto = texto.encode("latin-1")
-    #texto = codecs.charmap_decode(texto)
-    #envia("/3dp/text1/text text %s\n" % (texto[0].encode("utf-8")))
-    print "TEXTO",texto
-    envia("/3dp/text1/text text %s\n" % (texto))
     entrada.set_property("text","")
     on_w = xml.get_widget("3dp_object_on_text1")
     if not on_w.get_active():
         on_w.set_active(True)
+
 def on_enviar_texto3d2_clicked(*args):
     entrada = xml.get_widget("texto3d2_texto")
-    texto = entrada.get_text()
-    texto = codecs.charmap_encode(texto)
-    envia("/3dp/text2/text text %s\n" % (texto[0]))
+    send_3dtext_fromentry(entrada, 'text2')
+
     entrada.set_property("text","")
     on_w = xml.get_widget("3dp_object_on_text2")
     if not on_w.get_active():
