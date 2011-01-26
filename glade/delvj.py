@@ -464,7 +464,7 @@ prev_imagen1 = xml.get_widget("prev_imagen1")
 prev_imagen2 = xml.get_widget("prev_imagen2")
 prev_imagen3 = xml.get_widget("prev_imagen3")
 prev_imagen4 = xml.get_widget("prev_imagen4")
-prev_objects = ["screen2","ball1","ball2","storm","cal3d1","cal3d2","cubes"]
+prev_objects = ["screen2","ball1","ball2","storm","cal3d1","cal3d2","cubes","text1"]
 def sync_prev(prev_i):
     pwid = xml.get_widget("3dp_object_tex"+str(prev_i)+"_screen1")
     pixbuf = pwid.get_children()[0].get_children()[0].get_pixbuf()
@@ -1383,9 +1383,16 @@ def on_3dp_rendertype_changed(widget):
     else:
         activate = False
 
-    xml.get_widget(current_object+"_extrusion").set_sensitive(activate);
-    xml.get_widget(current_object+"_frontsize").set_sensitive(activate);
-    xml.get_widget(current_object+"_backsize").set_sensitive(activate);
+    xml.get_widget(current_object+"_extrusion").get_parent().set_sensitive(activate)
+    xml.get_widget(current_object+"_frontsize").get_parent().set_sensitive(activate)
+    xml.get_widget(current_object+"_backsize").get_parent().set_sensitive(activate)
+
+def on_3dp_reset_font(widget):
+    current_object = do_3dp_get_current_object(widget)
+    xml.get_widget(current_object+"_extrusion").set_value(0)
+    xml.get_widget(current_object+"_frontsize").set_value(0)
+    xml.get_widget(current_object+"_backsize").set_value(0)
+    xml.get_widget(current_object+"_glyphseparation").set_value(0)
 
 def on_3dp_radio_activated(widget):
     if "rendertype" in widget.get_name():

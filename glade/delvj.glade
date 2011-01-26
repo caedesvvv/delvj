@@ -17147,10 +17147,269 @@
                                       <widget class="GtkVBox" id="vbox207">
                                         <property name="visible">True</property>
                                         <child>
-                                          <placeholder/>
-                                        </child>
-                                        <child>
-                                          <placeholder/>
+                                          <widget class="GtkFrame" id="frame1">
+                                            <property name="visible">True</property>
+                                            <property name="label_xalign">0</property>
+                                            <property name="shadow_type">none</property>
+                                            <child>
+                                              <widget class="GtkAlignment" id="alignment1">
+                                                <property name="visible">True</property>
+                                                <property name="left_padding">12</property>
+                                                <child>
+                                                  <widget class="GtkVBox" id="vbox9">
+                                                    <property name="visible">True</property>
+                                                    <child>
+                                                      <widget class="GtkHBox" id="hbox12">
+                                                        <property name="visible">True</property>
+                                                        <property name="homogeneous">True</property>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex1_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">define video mix as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex1_licked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment2">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image3">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">0</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex2_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">select video from channel 1 as texture for the object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex2_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment3">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image4">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">1</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex3_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">select video from channel 2 as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex3_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment4">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image5">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">2</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex4_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">set webcam video as texture</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex4_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment5">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image6">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">3</property>
+                                                          </packing>
+                                                        </child>
+                                                      </widget>
+                                                      <packing>
+                                                        <property name="position">0</property>
+                                                      </packing>
+                                                    </child>
+                                                    <child>
+                                                      <widget class="GtkHBox" id="hbox13">
+                                                        <property name="visible">True</property>
+                                                        <property name="homogeneous">True</property>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex5_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">define the first image loaded into the texturing unit as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex5_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment6">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image7">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">0</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex6_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">define the 2 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex6_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment7">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image8">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">1</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex7_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">define the 3 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex7_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment8">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image9">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">2</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <widget class="GtkButton" id="3dp_object_tex8_text1">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">True</property>
+                                                            <property name="has_tooltip">True</property>
+                                                            <property name="tooltip" translatable="yes">define the 4 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex8_clicked"/>
+                                                            <child>
+                                                            <widget class="GtkAlignment" id="alignment9">
+                                                            <property name="visible">True</property>
+                                                            <property name="xscale">0</property>
+                                                            <property name="yscale">0</property>
+                                                            <child>
+                                                            <widget class="GtkImage" id="image10">
+                                                            <property name="visible">True</property>
+                                                            </widget>
+                                                            </child>
+                                                            </widget>
+                                                            </child>
+                                                          </widget>
+                                                          <packing>
+                                                            <property name="expand">False</property>
+                                                            <property name="fill">False</property>
+                                                            <property name="position">3</property>
+                                                          </packing>
+                                                        </child>
+                                                      </widget>
+                                                      <packing>
+                                                        <property name="position">1</property>
+                                                      </packing>
+                                                    </child>
+                                                  </widget>
+                                                </child>
+                                              </widget>
+                                            </child>
+                                            <child>
+                                              <widget class="GtkLabel" id="label10">
+                                                <property name="visible">True</property>
+                                                <property name="label" translatable="yes">&lt;b&gt;texture channel&lt;/b&gt;</property>
+                                                <property name="use_markup">True</property>
+                                              </widget>
+                                              <packing>
+                                                <property name="type">label_item</property>
+                                              </packing>
+                                            </child>
+                                          </widget>
+                                          <packing>
+                                            <property name="position">0</property>
+                                          </packing>
                                         </child>
                                       </widget>
                                       <packing>
@@ -17782,7 +18041,7 @@
                                   <widget class="GtkHScale" id="text1_extrusion">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <property name="adjustment">0 -5 5 0.01 0.5 0</property>
+                                    <property name="adjustment">0 -7.5 7.5 0.01 0.5 0</property>
                                     <property name="digits">2</property>
                                     <property name="value_pos">left</property>
                                     <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
@@ -17814,7 +18073,7 @@
                                   <widget class="GtkHScale" id="text1_frontsize">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <property name="adjustment">0 -30 30 0.01 5 0</property>
+                                    <property name="adjustment">0 -7.5 7.5 0.5 5 0</property>
                                     <property name="digits">2</property>
                                     <property name="value_pos">left</property>
                                     <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
@@ -17846,7 +18105,7 @@
                                   <widget class="GtkHScale" id="text1_backsize">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <property name="adjustment">0 -30 30 0.01 5 0</property>
+                                    <property name="adjustment">0 -7.5 7.5 0.01 0.5 0</property>
                                     <property name="digits">2</property>
                                     <property name="value_pos">left</property>
                                     <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
@@ -17891,6 +18150,22 @@
                               </widget>
                               <packing>
                                 <property name="position">3</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkButton" id="text1_reset_font">
+                                <property name="label" translatable="yes">Reset effects</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="yalign">0.6</property>
+                                <signal name="clicked" handler="on_3dp_reset_font"/>
+                              </widget>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="padding">20</property>
+                                <property name="position">4</property>
                               </packing>
                             </child>
                           </widget>
