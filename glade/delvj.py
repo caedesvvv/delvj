@@ -1339,7 +1339,7 @@ def find_font_name(fontsel):
         registry.scan(ttfquery.findsystem.linuxFontDirectories())
         fonts_scanned = True
     sel2 = sel[:sel.rfind(" ")]
-    size = sel[sel.rfind(" ")+1:]
+    size = sel[sel.rfind(" ")+1:].strip()
     try:
         fontNames = registry.matchName(sel2)
     except:
@@ -1359,14 +1359,17 @@ def find_font_name(fontsel):
     specifics.sort()
     metadata = registry.metadata( registry.fontFile(specifics[0]) )
     fontfile = metadata[0]
-    return fontfile
+    return (fontfile, size)
 
 def on_3dp_object_font_font_set(widget):
     address = "/3dp/"+do_3dp_get_current_object(widget)+"/font font "
+    size_address = "/3dp/"+do_3dp_get_current_object(widget)+"/fontsize "
+
     fontsel = xml.get_widget("3dp_object_font_"+do_3dp_get_current_object(widget))
-    fontfile = find_font_name(fontsel)
+    fontfile, size = find_font_name(fontsel)
     f = get_font_desc(fontsel)
     envia(address+fontfile+"\n")
+    envia(size_address+str(size)+"\n")
     if do_3dp_get_current_object(widget) == "text1":
         xml.get_widget("texto3d1_texto").modify_font(f)
     else:
@@ -1381,13 +1384,15 @@ def on_3dp_slider_value_changed(widget):
 
 def on_fuente_texto_font_set3d(*args):
     fontsel = xml.get_widget("fuente_texto3d")
-    fontfile = find_font_name(fontsel)
+    fontfile, size = find_font_name(fontsel)
     f = get_font_desc(fontsel)
     if (xml.get_widget("texto_lanzar_3d1").get_active()):
         envia("/3dp/text1/font font "+fontfile+"\n")
+        envia("/3dp/text1/fontsize "+str(size)+"\n")
         xml.get_widget("texto_texto3d").modify_font(f)
         xml.get_widget("texto3d1_texto").modify_font(f)
     if (xml.get_widget("texto_lanzar_3d2").get_active()):
+        envia("/3dp/text2/fontsize "+str(size)+"\n")
         envia("/3dp/text1/font font "+fontfile+"\n")
         xml.get_widget("texto_texto3d").modify_font(f)
         xml.get_widget("texto3d2_texto").modify_font(f)
@@ -1398,7 +1403,7 @@ def on_fuente_texto_font_set(*args):
     fontsel.set_use_font(1)
     sel = fontsel.get_font_name()
     size = sel[sel.rfind(" ")+1:]
-    fontfile = find_font_name(fontsel)
+    fontfile, size = find_font_name(fontsel)
     dir = os.path.dirname(fontfile)
     fontfile = fontfile[fontfile.rfind("/")+1:fontfile.rfind(".")]
     fontfile = dir +"/"+fontfile + "/" + size
