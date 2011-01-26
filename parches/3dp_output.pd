@@ -14,7 +14,7 @@
 #X obj 162 288 loadbang;
 #X obj 512 93 spigot;
 #X obj 560 92 tgl 18 0 empty empty pantalla 0 -6 0 4 -261689 -1 -1
-0 1;
+1 1;
 #X obj 836 526 spigot;
 #X obj 884 525 tgl 18 0 empty empty bola 0 -6 0 4 -261681 -1 -1 0 1
 ;
@@ -165,7 +165,7 @@
 -1 0;
 #X obj 1200 381 tgl 18 0 empty empty cal3d 0 -6 0 8 -260818 -1 -1 0
 1;
-#X obj 1229 155 tgl 18 0 empty empty texto 0 -6 0 8 -260818 -1 -1 1
+#X obj 1229 155 tgl 18 0 empty empty texto 0 -6 0 8 -260818 -1 -1 0
 1;
 #X obj 631 -61 s \$1-pantalla1;
 #X obj 685 -40 s \$1-pantalla2;
@@ -433,6 +433,9 @@
 #X obj 1582 256 - 1;
 #X obj 1591 278 *;
 #X obj 1577 211 >= 0;
+#X obj 1522 188 t f f;
+#X obj 1462 186 t f f;
+#X obj 1584 188 t f f;
 #X connect 0 0 151 0;
 #X connect 0 1 60 1;
 #X connect 1 0 196 0;
@@ -875,12 +878,9 @@
 #X connect 331 5 222 4;
 #X connect 331 6 267 1;
 #X connect 331 7 329 0;
-#X connect 331 8 333 0;
-#X connect 331 8 339 0;
-#X connect 331 9 346 0;
-#X connect 331 9 340 0;
-#X connect 331 10 353 0;
-#X connect 331 10 347 0;
+#X connect 331 8 355 0;
+#X connect 331 9 354 0;
+#X connect 331 10 356 0;
 #X connect 331 11 329 5;
 #X connect 331 12 326 0;
 #X connect 331 13 325 0;
@@ -908,3 +908,9 @@
 #X connect 351 0 352 0;
 #X connect 352 0 329 4;
 #X connect 353 0 350 0;
+#X connect 354 0 346 0;
+#X connect 354 1 340 0;
+#X connect 355 0 339 0;
+#X connect 355 1 333 0;
+#X connect 356 0 353 0;
+#X connect 356 1 347 0;

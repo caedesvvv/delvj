@@ -18073,7 +18073,7 @@
                                   <widget class="GtkHScale" id="text1_frontsize">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <property name="adjustment">0 -7.5 7.5 0.5 5 0</property>
+                                    <property name="adjustment">0 -7.5 7.5 0.01 0.5 0</property>
                                     <property name="digits">2</property>
                                     <property name="value_pos">left</property>
                                     <signal name="value_changed" handler="on_3dp_slider_value_changed"/>
