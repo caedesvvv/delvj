@@ -23,6 +23,7 @@ pygtk.require('2.0')
 import gtk
 import gtk.glade
 import gobject
+import pango
 import popen2
 import os
 import os.path
@@ -1320,7 +1321,6 @@ def on_color_texto_color_set(*args):
         envia("/text/a %s\n" % (alpha))
 
 def get_font_desc(fontsel):
-    import pango
     fn = fontsel.get_font_name()
     fn = fn[:fn.rfind(" ")]
     fn = fn + " 12"
@@ -1331,23 +1331,25 @@ def find_font_name(fontsel):
     global fonts_scanned
     fontsel.set_use_font(1)
     sel = fontsel.get_font_name()
-    sel = string.replace(sel,"Italic",'')
 
     from ttfquery._scriptregistry import registry
     import ttfquery
     if not fonts_scanned:
-        ttfquery.findsystem.findFonts()
+        #ttfquery.findsystem.findFonts()
+        registry.scan(ttfquery.findsystem.linuxFontDirectories())
         fonts_scanned = True
     sel2 = sel[:sel.rfind(" ")]
     size = sel[sel.rfind(" ")+1:]
     try:
         fontNames = registry.matchName(sel2)
     except:
+        sel2 = string.replace(sel2,"Italic",'')
         sel2 = string.replace(sel2,"Semi-Condensed",'')
         sel2 = string.replace(sel2,"Semi-Bold",'')
         sel2 = string.replace(sel2,"Condensed",'')
         sel2 = string.replace(sel2,"Sans L",'')
         sel2 = string.replace(sel2,"Bold",'')
+        sel2 = string.replace(sel2,"Oblique",'')
         sel2 = string.replace(sel2,"L,",'')
         if sel2.endswith(" L"):
             sel2 = sel2[:-2]
@@ -1458,14 +1460,17 @@ def on_borrar_texto_clicked3d(*args):
         envia("/3dp/text2/on %s\n" % (0))
 
 def send_3dtext_fromentry(entrada, destino):
-    reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
-    envia("/3dp/"+destino+"/reverse %i\n" % reverse)
-
     texto = entrada.get_text()
+
+    #reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
+    lay = xml.get_widget("texto3d1_texto").create_pango_layout(unicode(texto)[0])
     send_3dtext(texto, destino)
 
 def send_3dtext(texto, destino):
     texto = texto.decode("latin-1")
+    rtl = pango.unichar_direction(unicode(texto)[0]) == pango.DIRECTION_RTL
+    envia("/3dp/"+destino+"/reverse %i\n" % rtl)
+
     texto = texto.encode("latin-1")
     envia("/3dp/"+destino+"/text text %s\n" % (texto))
 
