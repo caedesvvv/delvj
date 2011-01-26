@@ -1375,11 +1375,30 @@ def on_3dp_object_font_font_set(widget):
     else:
         xml.get_widget("texto3d2_texto").modify_font(f)
 
+def on_3dp_rendertype_changed(widget):
+    current_object = do_3dp_get_current_object(widget)
+
+    if "extrude" in widget.get_name():
+        activate = True
+    else:
+        activate = False
+
+    xml.get_widget(current_object+"_extrusion").set_sensitive(activate);
+    xml.get_widget(current_object+"_frontsize").set_sensitive(activate);
+    xml.get_widget(current_object+"_backsize").set_sensitive(activate);
+
+def on_3dp_radio_activated(widget):
+    if "rendertype" in widget.get_name():
+        on_3dp_rendertype_changed(widget)
+
+    if widget.get_active() == True:
+        parts = widget.get_name().rpartition("_")
+        address = "/3dp/"+parts[0].replace("_","/")+" "+parts[2]
+        envia(address+"\n")
+
 def on_3dp_slider_value_changed(widget):
     address = "/3dp/"+widget.get_name().replace('_', '/')+' '
     envia(address+str(widget.get_value())+"\n")
-
-
 
 
 def on_fuente_texto_font_set3d(*args):
