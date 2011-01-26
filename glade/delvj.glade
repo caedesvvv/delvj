@@ -18692,6 +18692,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">define video mix as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex1_licked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment11">
                                                             <property name="visible">True</property>
@@ -18718,6 +18719,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">select video from channel 1 as texture for the object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex2_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment12">
                                                             <property name="visible">True</property>
@@ -18744,6 +18746,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">select video from channel 2 as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex3_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment13">
                                                             <property name="visible">True</property>
@@ -18770,6 +18773,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">set webcam video as texture</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex4_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment14">
                                                             <property name="visible">True</property>
@@ -18805,6 +18809,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">define the first image loaded into the texturing unit as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex5_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment15">
                                                             <property name="visible">True</property>
@@ -18831,6 +18836,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">define the 2 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex6_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment16">
                                                             <property name="visible">True</property>
@@ -18857,6 +18863,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">define the 3 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex7_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment17">
                                                             <property name="visible">True</property>
@@ -18883,6 +18890,7 @@
                                                             <property name="receives_default">True</property>
                                                             <property name="has_tooltip">True</property>
                                                             <property name="tooltip" translatable="yes">define the 4 image loaded as texture for object</property>
+                                                            <signal name="clicked" handler="on_3dp_object_tex8_clicked"/>
                                                             <child>
                                                             <widget class="GtkAlignment" id="alignment18">
                                                             <property name="visible">True</property>
