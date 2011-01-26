@@ -1493,14 +1493,14 @@ def on_borrar_texto_clicked3d(*args):
 def send_3dtext_fromentry(entrada, destino):
     texto = entrada.get_text()
 
-    #reverse =  entrada.get_layout().index_to_pos(0)[2] < 0
-    lay = xml.get_widget("texto3d1_texto").create_pango_layout(unicode(texto)[0])
     send_3dtext(texto, destino)
 
 def send_3dtext(texto, destino):
     texto = texto.decode("latin-1")
-    rtl = pango.unichar_direction(unicode(texto)[0]) == pango.DIRECTION_RTL
-    envia("/3dp/"+destino+"/reverse %i\n" % rtl)
+    if texto:
+        rtl = pango.unichar_direction(unicode(texto)[0]) == pango.DIRECTION_RTL
+        envia("/3dp/"+destino+"/reverse %i\n" % rtl)
+        print "/3dp/"+destino+"/text text %s\n" % (texto)
 
     texto = texto.encode("latin-1")
     envia("/3dp/"+destino+"/text text %s\n" % (texto))
