@@ -1,4 +1,4 @@
-#N canvas 452 92 522 491 10;
+#N canvas 737 317 522 491 10;
 #X obj 393 15 inlet OSC;
 #X obj 18 28 inlet 3dp;
 #X obj 58 124 3dp_color;
@@ -43,9 +43,9 @@
 #X obj 420 276 metro 40;
 #X obj 443 250 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 412 372 sin;
+#X obj 401 354 sin;
 #X floatatom 377 384 5 0 0 0 - - -;
-#X obj 220 368 + 0;
+#X obj 222 393 + 0;
 #X obj 289 363 t b f;
 #X floatatom 271 406 5 0 0 0 - - -;
 #X floatatom 237 340 5 0 0 0 - - -;
@@ -64,6 +64,9 @@
 #X obj 497 260 spigot;
 #X obj 503 236 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X obj 559 157 route 0;
+#X msg 518 175 0;
+#X floatatom 609 307 5 0 0 0 - - -;
 #X connect 0 0 49 0;
 #X connect 1 0 25 0;
 #X connect 2 1 16 0;
@@ -126,8 +129,12 @@
 #X connect 49 8 25 1;
 #X connect 49 9 26 1;
 #X connect 49 10 35 0;
+#X connect 49 10 52 0;
 #X connect 49 11 51 0;
 #X connect 49 12 45 0;
 #X connect 49 13 44 0;
 #X connect 50 0 35 0;
 #X connect 51 0 50 1;
+#X connect 52 0 53 0;
+#X connect 53 0 54 0;
+#X connect 53 0 39 0;

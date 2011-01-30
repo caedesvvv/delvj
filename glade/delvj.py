@@ -386,6 +386,8 @@ modelo_textos3d.append(['openeeg 3d delremix of the alpha and beta waves'])
 modelo_rssfeeds = gtk.ListStore(str, str);   # tiempo, comando
 
 modelo_rssfeeds.append(['Barrapunto',"http://barrapunto.com/barrapunto.rss"])
+modelo_rssfeeds.append(['N-1',"http://n-1.artelibredigital.net/mod/riverdashboard/?view=rss"])
+modelo_rssfeeds.append(['Lorea',"https://n-1.cc/pg/groups/7826/lorea/?view=rss"])
 modelo_rssfeeds.append(['CrystalSpace',"http://crystal.sourceforge.net/tikiwiki/tiki-articles_rss.php?ver=2"])
 modelo_rssfeeds.append(['Indymedia Global',"http://indymedia.org/global.1-0.rss"])
 modelo_rssfeeds.append(['Sindominio',"http://sindominio.net/novedades.rdf"])
