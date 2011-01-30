@@ -452,7 +452,7 @@ def on_window1_key_press_event(window,event):
             val="1"
             keystates[keyname]=True
         envia(keymapping[keyname]+" "+val+"\n")
-        print keymapping[keyname]+" "+val
+        #print keymapping[keyname]+" "+val
 
 #def on_window1_key_release_event(window,event):
     #    print "RELEASED:",event.string,event.keyval,event.state,event.hardware_keycode
@@ -734,7 +734,6 @@ def xmms_control(j,i):
                     textor = textor.replace(";",":")
                     textor = string.replace(textor," ","%32")
                     textof = '/text/text text "' + textor + '" %s' % string.atoi(x)
-                    print textof
                     envia(textof+' %s\n' % string.atoi(y))
             gtk.threads_leave()
         time.sleep(1)
@@ -1502,7 +1501,6 @@ def send_3dtext(texto, destino):
     if texto:
         rtl = pango.unichar_direction(unicode(texto)[0]) == pango.DIRECTION_RTL
         envia("/3dp/"+destino+"/reverse %i\n" % rtl)
-        print "/3dp/"+destino+"/text text %s\n" % (texto)
 
     texto = texto.encode("latin-1")
     envia("/3dp/"+destino+"/text text %s\n" % (texto))
